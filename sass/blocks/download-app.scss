@@ -1,0 +1,86 @@
+.download-app {
+    background-color: #1d2631;
+    @media (min-width: $tablet) {
+        position: absolute;
+        top: -555px;
+        left: 0;
+
+        max-width: 620px;
+
+        background-color: transparent;
+    }
+}
+
+.download-app__wrapper {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 28px 20px;
+
+    text-align: center;
+    color: #ffffff;
+
+    outline: 1px solid yellow;
+}
+
+.download-app__header {
+    display: none;
+
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0 30px;
+
+    font-family: $font-light;
+    font-size: 40px;
+    line-height: 47px;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+}
+
+.download-app__button {
+    margin-bottom: 32px;
+    @media (min-width: $tablet) {
+        margin-bottom: 46px;
+    }
+}
+
+.download-app__links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+    @media (min-width: $tablet) {
+        margin-bottom: 38px;
+    }
+}
+
+.download-app__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.download-app__link--apple {
+    background-image: url("../../img/svg/logo-apple.svg");
+}
+
+.download-app__link--android {
+    background-image: url("../../img/svg/logo-android.svg");
+}
+
+.download-app__link--microsoft {
+    background-image: url("../../img/svg/logo-microsoft.svg");
+}
+
+.download-app__text {
+    margin: 0;
+
+    font-family: $font-light;
+    font-size: 18px;
+    line-height: 24px;
+}

@@ -1,0 +1,7 @@
+.page-main {
+    position: relative;
+    @media (min-width: $tablet) {
+        max-width: 660px;
+        margin: 0 auto;
+    }
+}
