@@ -9,67 +9,102 @@
     <body>
         <header class="page-header">
             <nav class="main-nav">
-                <div class="main-nav__menu-wrapper container">
-                    <a class="main-nav__logo" href="index.html">
-                        <svg class="svg-icon" width="76" height="24">
-                            <use xlink:href="img/svg/sprite.svg#logo-pink-white-mobile"></use>
-                        </svg>
-                    </a>
-                    <button class="main-nav__toggle none" type="button">
-                        <svg class="svg-icon" width="50" height="24">
-                            <use xlink:href="img/svg/sprite.svg#icon-menu-burger"></use>
-                        </svg>
-                    </button>
-                    <button class="main-nav__toggle" type="button">
-                        <svg class="svg-icon" width="24" height="24">
-                            <use xlink:href="img/svg/sprite.svg#icon-menu-cross"></use>
-                        </svg>
-                    </button>
+                <div class="main-nav__wrapper">
+                    <div class="main-nav__menu-wrapper">
+                        <a class="main-nav__logo" href="index.html">
+                            <svg class="main-nav__logo-icon main-nav__logo-icon--mobile svg-icon" width="76" height="24">
+                                <use xlink:href="img/svg/sprite.svg#logo-pink-white-mobile"></use>
+                            </svg>
+                            <svg class="main-nav__logo-icon main-nav__logo-icon--tablet svg-icon" width="147" height="40">
+                                <use xlink:href="img/svg/sprite.svg#logo-pink-blue-mobile"></use>
+                            </svg>
+                            <svg class="main-nav__logo-icon main-nav__logo-icon--desktop svg-icon" width="147" height="40">
+                                <use xlink:href="img/svg/sprite.svg#logo-pink-white-desktop"></use>
+                            </svg>
+                        </a>
+                        <button class="main-nav__toggle none" type="button">
+                            <svg class="svg-icon" width="50" height="24">
+                                <use xlink:href="img/svg/sprite.svg#icon-menu-burger"></use>
+                            </svg>
+                        </button>
+                        <button class="main-nav__toggle" type="button">
+                            <svg class="svg-icon" width="24" height="24">
+                                <use xlink:href="img/svg/sprite.svg#icon-menu-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="main-nav__list ">
+                        <li class="main-nav__list-item">
+                            <span class="main-nav__link main-nav__link--active" href="#">
+                                <span>Главная</span>
+                            </span>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#">
+                                <span>Фотографии</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#">
+                                <span>Конкурс</span>
+                            </a>
+                        </li>
+                        <li class="main-nav__list-item">
+                            <a class="main-nav__link" href="#">
+                                <span>HTML Academy</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="main-nav__list ">
-                    <li class="main-nav__list-item">
-                        <span class="main-nav__link main-nav__link--active" href="#">
-                            <span>Главная</span>
-                        </span>
-                    </li>
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">
-                            <span>Фотографии</span>
-                        </a>
-                    </li>
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">
-                            <span>Конкурс</span>
-                        </a>
-                    </li>
-                    <li class="main-nav__list-item">
-                        <a class="main-nav__link" href="#">
-                            <span>HTML Academy</span>
-                        </a>
-                    </li>
-                </ul>
             </nav>
-            <div class="page-header__background"></div>
+            <div class="page-header__background">
+                <div class="page-header__background-wrapper"></div>
+            </div>
         </header>
         <main class="page-main">
-            <section class="page-main__download-app download-app">
-                <div class="download-app__wrapper">
-                    <h2 class="download-app__header">Взгляните на жизнь иначе!</h2>
-                    <a class="download-app__button button button__white" href="#">Скачать приложение</a>
-                    <div class="download-app__links">
-                        <a class="download-app__link download-app__link--apple" href="#">
-                            <span class="visually-hidden">App Store</span>
-                        </a>
-                        <a class="download-app__link download-app__link--android" href="#">
-                            <span class="visually-hidden">Play Маркет</span>
-                        </a>
-                        <a class="download-app__link download-app__link--microsoft" href="#">
-                            <span class="visually-hidden">Windows Store</span>
-                        </a>
+            <div class="page-main__download-wrapper">
+                <section class="page-main__download-app download-app">
+                    <div class="download-app__wrapper">
+                        <h2 class="download-app__header">Взгляните на жизнь иначе!</h2>
+                        <a class="download-app__button button button__white" href="#">Скачать приложение</a>
+                        <div class="download-app__links">
+                            <a class="download-app__link download-app__link--apple" href="#">
+                                <span class="visually-hidden">App Store</span>
+                            </a>
+                            <a class="download-app__link download-app__link--android" href="#">
+                                <span class="visually-hidden">Play Маркет</span>
+                            </a>
+                            <a class="download-app__link download-app__link--microsoft" href="#">
+                                <span class="visually-hidden">Windows Store</span>
+                            </a>
+                        </div>
+                        <p class="download-app__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
                     </div>
-                    <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+                </section>
+            </div>
+            <section class="slogan">
+                <div class="slogan__wrapper content">
+                    <p class="slogan__text">Устали от серости мегаполиса?</p>
+                    <p class="slogan__text">Нам есть, что вам<br> предложить!</p>
                 </div>
             </section>
+            <section class="advantages">
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <h3 class="header-bold">Поднимает настроение</h3>
+                        <p></p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3 class="header-bold">Меняет мир вокруг</h3>
+                        <p></p>
+                    </li>
+                    <li class="advantages__item">
+                        <h3 class="header-bold">Заводит новых друзей</h3>
+                        <p></p>
+                    </li>
+                </ul>
+            </section>
+
 
         </main>
         <footer>

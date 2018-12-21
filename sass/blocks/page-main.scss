@@ -1,7 +1,25 @@
 .page-main {
+    // position: relative;
+    // @media (min-width: $tablet) {
+    //     max-width: 660px;
+    //     margin: 0 auto;
+    // }
+    // @media (min-width: $desktop) {
+    //     max-width: 1200px;
+    //     margin: 0 auto;
+    // }
+}
+
+.page-main__download-wrapper {
     position: relative;
     @media (min-width: $tablet) {
-        max-width: 660px;
+        width: 620px;
         margin: 0 auto;
+        padding: 0 20px
+    }
+    @media (min-width: $desktop) {
+        width: 900px;
+        margin: 0 auto;
+        // padding: 0 20px
     }
 }

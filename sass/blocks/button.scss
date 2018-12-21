@@ -13,9 +13,22 @@
     border-style: solid;
     border-width: 3px;
     border-radius: 27px;
+    @media (min-width: $desktop) {
+        font-size: 21px;
+    }
 }
 
 .button__white {
     color: #ffffff;
     border-color: #ffffff;
+}
+
+.button__white:hover {
+    color: $pink;
+    background-color: #ffffff;
+}
+
+.button__white:active {
+    color: $pink_03;
+    background-color: #ffffff;
 }

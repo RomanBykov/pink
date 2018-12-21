@@ -8,7 +8,7 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
-    color: #283645;
+    color: $navy;
 
     background-color: #ffffff;
 }
@@ -30,6 +30,14 @@ a {
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 30px;
-    color: #283645;
+    color: $navy;
     text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
 }
