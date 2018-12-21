@@ -1,14 +1,12 @@
 .slogan {
     position: relative;
     padding-top: 43px;
-    // padding-bottom: 35px;
+    padding-bottom: 62px;
     background-color: #ffffff;
-    // background-color: red;
-    // outline: 1px solid red;
 
     background-image: url("../../img/svg/bg-triangle-white.svg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 0 101%;
     background-size: 100% auto;
 
 
@@ -18,24 +16,8 @@
     @media (min-width: $desktop) {
         padding-top: 69px;
     }
-
-    // background-image: url("../../img/svg/bg-triangle-white.svg");
-    // background-repeat: no-repeat;
-    // background-position-y: 0;
 }
 
-// .slogan::after {
-//     content: "";
-//     position: absolute;
-//     bottom: -60px;
-//     left: 0;
-//     right: 0;
-//     width: 100%;
-//     height: 60px;
-//     background-image: url("../../img/svg/bg-triangle-white.svg");
-//     background-repeat: no-repeat;
-//     outline: 1px solid blue
-// }
 
 .slogan__text {
     margin: 0;
