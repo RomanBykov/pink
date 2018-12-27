@@ -1,7 +1,7 @@
 .slogan {
     position: relative;
     padding-top: 43px;
-    padding-bottom: 62px;
+    padding-bottom: 36px;
     background-color: #ffffff;
 
     background-image: url("../../img/svg/bg-triangle-white.svg");
@@ -12,9 +12,11 @@
 
     @media (min-width: $tablet) {
         padding-top: 49px;
+        padding-bottom: 94px;
     }
     @media (min-width: $desktop) {
         padding-top: 69px;
+        padding-bottom: 165px;
     }
 }
 
@@ -37,7 +39,7 @@
         line-height: 46px;
     }
     @media (min-width: $desktop) {
-        margin-bottom: 5px;
+        margin-bottom: 3px;
 
         font-size: 50px;
         line-height: 58px;

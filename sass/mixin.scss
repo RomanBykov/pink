@@ -1,8 +1,15 @@
-$font-bold: 'Open Sans-bold';
-$font-light: 'Open Sans-light';
+$font-bold: 'Open Sans-bold', Arial, sans-serif;
+$font-light: 'Open Sans-light', Arial, sans-serif;
+$font-normal: 'Open Sans', Arial, sans-serif;
 $tablet: 660px;
 $desktop: 960px;
 $navy: #283645;
 $pink: #d22856;
 $pink_03: rgba(210, 40, 86, 0.3);
 $grey: #f2f2f2;
+
+@mixin list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
