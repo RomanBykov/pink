@@ -34,3 +34,23 @@
         padding: 0 10px;
     }
 }
+
+.tablet-breakline {
+    display: none;
+    @media (min-width: $tablet) {
+        display: inline;
+    }
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.desktop-breakline {
+    display: none;
+    // @media (min-width: $tablet) {
+    //     display: inline;
+    // }
+    @media (min-width: $desktop) {
+        display: inline;
+    }
+}
