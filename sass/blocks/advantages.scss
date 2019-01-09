@@ -1,5 +1,5 @@
 .advantages {
-    padding: 0 20px;
+    // padding: 0 20px;
     padding-top: 48px;
     background-color: $grey;
 
@@ -29,11 +29,12 @@
 }
 
 .advantages__item {
+    flex-shrink: 0;
     text-align: center;
     margin-bottom: 31px;
     @media (min-width: $tablet) {
         text-align: left;
-        margin-bottom: 34px;
+        margin-bottom: 35px;
     }
     @media (min-width: $desktop) {
         width: 240px;
@@ -46,7 +47,7 @@
     margin: 0;
     margin-bottom: 12px;
     @media (min-width: $desktop) {
-        margin-bottom: 22px;
+        margin-bottom: 23px;
     }
 }
 
@@ -81,7 +82,7 @@
     // outline: 1px solid red;
     @media (min-width: $desktop) {
         justify-content: space-between;
-
+        padding: 0 5px;
     }
 }
 
@@ -94,7 +95,7 @@
     @media (min-width: $tablet) {
         position: relative;
         z-index: 1;
-        height: 480px;
+        height: 481px;
         margin-top: -70px;
     }
     @media (min-width: $desktop) {
@@ -102,10 +103,6 @@
         margin-top: -118px;
         margin-bottom: 56px;
     }
-}
-
-.advantages__img {
-    // position:
 }
 
 .advantages__img--tablet {

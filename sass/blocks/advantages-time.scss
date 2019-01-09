@@ -1,0 +1,107 @@
+.advantages-time {
+    display: none;
+    @media (min-width: $tablet) {
+        display: block;
+        padding-top: 59px;
+        padding-bottom: 52px;
+
+        background-color: #ffffff;
+        // margin: 0 auto;
+        // width: 620px;
+    }
+    @media (min-width: $desktop) {
+        // width: 940px;
+        padding-top: 31px;
+
+        padding-bottom: 66px;
+        background-color: $grey;
+        // outline: 1px solid red;
+    }
+}
+
+.advantages-time__wrapper {
+    margin: 0 auto;
+    @media (min-width: $tablet) {
+        margin: 0 auto;
+        width: 620px;
+    }
+    @media (min-width: $desktop) {
+        width: 940px;
+    }
+}
+
+.advantages-time__timer {
+    position: relative;
+    display: inline-block;
+}
+
+.advantages-time__timer img {
+    width: 238px;
+    height: 276px;
+    margin-left: 1px;
+    @media (min-width: $desktop) {
+        width: 298px;
+        height: 345px;
+    }
+}
+
+.advantages-time__wrapper {
+    display: flex;
+    justify-content: space-between;
+    // margin-top: 20px;
+}
+
+.advantages-time__research {
+    flex-shrink: 0;
+    width: 310px;
+    margin-top: 37px;
+    @media (min-width: $desktop) {
+        width: 574px;
+        margin-top: 94px;
+    }
+}
+
+.advantages-time__research-title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-family: $font-bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    @media (min-width: $desktop) {
+        margin-bottom: 24px;
+    }
+}
+
+.advantages-time__research-text {
+    margin: 0;
+    margin-bottom: 11px;
+
+    color: $navy;
+    @media (min-width: $desktop) {
+        margin-bottom: 30px;
+
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.advantages-time__research-link {
+    color: $pink;
+    text-decoration: underline;
+    @media (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    &:hover,
+    &:focus {
+        color: $navy;
+    }
+    &:active {
+        color: $navy;
+        opacity: 0.3;
+        text-decoration: none;
+    }
+}
