@@ -31,7 +31,14 @@
     }
 }
 
-.tablet-breakline {
+.tablet-inline {
+    display: none;
+    @media (min-width: $tablet) {
+        display: inline;
+    }
+}
+
+.tablet-only-inline {
     display: none;
     @media (min-width: $tablet) {
         display: inline;
@@ -41,12 +48,18 @@
     }
 }
 
-.desktop-breakline {
+.desktop-inline {
     display: none;
     // @media (min-width: $tablet) {
     //     display: inline;
     // }
     @media (min-width: $desktop) {
         display: inline;
+    }
+}
+
+.desktop-none {
+    @media (min-width: $desktop) {
+        display: none;
     }
 }

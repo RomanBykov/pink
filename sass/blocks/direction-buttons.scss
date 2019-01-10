@@ -1,0 +1,54 @@
+.direction-buttons {
+    display: none;
+
+    @media (min-width: $desktop) {
+        position: absolute;
+        top: 34px;
+        left: 0;
+
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.direction-btn {
+    position: relative;
+    z-index: 1;
+
+    width: 28px;
+    height: 28px;
+    margin: 0;
+    padding: 0;
+
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $navy;
+    border-top: none;
+    border-right: none;
+    outline: none;
+
+    transform: rotate(45deg);
+
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.direction-btn:hover,
+.direction-btn:focus {
+    opacity: 0.6;
+}
+
+.direction-btn:active {
+    opacity: 0.1;
+}
+
+.direction-btn-left {
+    margin-left: 15px;
+}
+
+.direction-btn-right {
+    transform: rotate(225deg);
+    margin-right: 15px;
+}

@@ -97,7 +97,7 @@
                         </li>
                         <li class="advantages__item">
                             <h3 class="header-bold advantages__header">Меняет мир вокруг</h3>
-                            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="tablet-breakline"> усилить эффект</p>
+                            <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="tablet-only-inline"> усилить эффект</p>
                         </li>
                         <li class="advantages__item">
                             <h3 class="header-bold advantages__header">Заводит новых друзей</h3>
@@ -130,35 +130,45 @@
                         </picture>
                     </div>
                     <div class="advantages-time__research">
-                        <h2 class="advantages-time__research-title">Эффект<br class="tablet-breakline"> на 24 часа!</h2>
-                        <p class="advantages-time__research-text">Британские ученые провели исследования<br class="tablet-breakline"> и доказали,<br class="desktop-breakline"> что положительный эффект<br class="tablet-breakline"> от использования приложения длится целые сутки!</p>
+                        <h2 class="advantages-time__research-title">Эффект<br class="tablet-only-inline"> на 24 часа!</h2>
+                        <p class="advantages-time__research-text">Британские ученые провели исследования<br class="tablet-only-inline"> и доказали,<br class="desktop-inline"> что положительный эффект<br class="tablet-only-inline"> от использования приложения длится целые сутки!</p>
                         <a class="advantages-time__research-link" href="#">Узнать больше об исследовании</a>
                     </div>
                 </div>
             </section>
             <section class="reviews triangle-shape slider">
-                <input class="slider__radio-1" type="radio" id="btn-1" name="toggle">
-                <input class="slider__radio-2" type="radio" id="btn-2" name="toggle">
-                <input class="slider__radio-3" type="radio" id="btn-3" name="toggle">
-                <div class="slider__controls">
-                    <label for="btn-1"><span class="visually-hidden"></span></label>
-                    <label for="btn-2"><span class="visually-hidden"></span></label>
-                    <label for="btn-3"><span class="visually-hidden"></span></label>
-                </div>
-                <div class="slider__inner">
-                    <div class="slider__slides">
-                        <blockquote class="reviews__review">
-                            <cite class="reviews__author"></cite>
-                            <p class="reviews__comment"></p>
-                        </blockquote>
-                        <blockquote class="reviews__review">
-                            <cite class="reviews__author"></cite>
-                            <p class="reviews__comment"></p>
-                        </blockquote>
-                        <blockquote class="reviews__review">
-                            <cite class="reviews__author"></cite>
-                            <p class="reviews__comment"></p>
-                        </blockquote>
+                <div class="reviews__wrapper">
+                    <div class="direction-buttons">
+                        <button class="direction-btn direction-btn-left" type="button">
+                            <span class="visually-hidden">Слайд влево</span>
+                        </button>
+                        <button class="direction-btn direction-btn-right" type="button">
+                            <span class="visually-hidden">Слайд вправо</span>
+                        </button>
+                    </div>
+                    <input class="slider__radio-1" type="radio" id="btn-1" name="toggle" checked>
+                    <input class="slider__radio-2" type="radio" id="btn-2" name="toggle">
+                    <input class="slider__radio-3" type="radio" id="btn-3" name="toggle">
+                    <div class="slider__controls">
+                        <label for="btn-1"><span class="visually-hidden"></span></label>
+                        <label for="btn-2"><span class="visually-hidden"></span></label>
+                        <label for="btn-3"><span class="visually-hidden"></span></label>
+                    </div>
+                    <div class="slider__inner">
+                        <div class="slider__slides">
+                            <blockquote class="reviews__review slider__slide slider__slide--1">
+                                <cite class="reviews__author">Николай Петров<br><span class="tablet-inline">25 лет, водитель трамвая</span></cite>
+                                <p class="reviews__comment"><span class="desktop-none">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="desktop-none">»</span></p>
+                            </blockquote>
+                            <blockquote class="reviews__review slider__slide slider__slide--2">
+                                <cite class="reviews__author">Николай Второй<br><span class="tablet-inline">25 лет, водитель трамвая</span></cite>
+                                <p class="reviews__comment"><span class="desktop-none">«</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!<span class="desktop-none">»</span></p>
+                            </blockquote>
+                            <blockquote class="reviews__review slider__slide slider__slide--3">
+                                <cite class="reviews__author">Николай Третий<br><span class="tablet-inline">25 лет, водитель трамвая</span></cite>
+                                <p class="reviews__comment"><span class="desktop-none">«</span>А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span class="desktop-none">»</span></p>
+                            </blockquote>
+                        </div>
                     </div>
                 </div>
             </section>
