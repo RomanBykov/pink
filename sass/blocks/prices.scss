@@ -1,0 +1,16 @@
+.prices {
+    padding-top: 66px;
+    background-color: $grey;
+}
+
+.prices__wrapper {
+    width: 320px;
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    @media (min-width: $tablet) {
+        width: 620px;
+        overflow: visible;
+    }
+}
