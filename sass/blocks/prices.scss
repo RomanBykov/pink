@@ -1,16 +1,128 @@
 .prices {
     padding-top: 66px;
+    padding-bottom: 99px;
     background-color: $grey;
+
+    @media (min-width: $tablet) {
+        padding-top: 38px;
+        padding-bottom: 68px;
+    }
 }
 
 .prices__wrapper {
+    position: relative;
     width: 320px;
     margin: 0 auto;
 
-    overflow: hidden;
+    // overflow: hidden;
 
     @media (min-width: $tablet) {
-        width: 620px;
+        width: 100%;
         overflow: visible;
+    }
+}
+
+.prices-slider__inner {
+    min-width: 280px;
+    // max-width: 940px;
+
+    overflow: hidden;
+}
+
+.prices-slider__slide {
+    width: 100%;
+}
+
+.prices-slider__slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.2s ease;
+    @media (min-width: $tablet) {
+        width: 100%;
+    }
+}
+
+.prices-slider input[type="radio"] {
+    position: absolute;
+    bottom: -62px;
+    left: 50%;
+    transform: translate(-50%);
+    outline: none;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.prices-slider__controls {
+    position: absolute;
+    bottom: -62px;
+    left: 50%;
+    z-index: 1;
+
+    width: 62px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $grey;
+
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.prices-slider__controls label {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    vertical-align: top;
+
+    background-color: $navy;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: $grey;
+
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+#prices-btn-1:hover ~ .prices-slider__controls label[for="prices-btn-1"],
+#prices-btn-2:hover ~ .prices-slider__controls label[for="prices-btn-2"],
+#prices-btn-3:hover ~ .prices-slider__controls label[for="prices-btn-3"] {
+    // background-color: $navy;
+    // border-width: 3px;
+    // border-style: solid;
+    // border-color: $grey;
+    opacity: 0.6;
+}
+
+#prices-btn-1:checked ~ .prices-slider__controls label[for="prices-btn-1"],
+#prices-btn-2:checked ~ .prices-slider__controls label[for="prices-btn-2"],
+#prices-btn-3:checked ~ .prices-slider__controls label[for="prices-btn-3"] {
+    border-color: $navy;
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+#prices-btn-1:checked ~ .prices-slider__inner .prices-slider__slides {
+    transform: translate(0);
+}
+
+#prices-btn-2:checked ~ .prices-slider__inner .prices-slider__slides {
+    transform: translate(-280px);
+    @media (min-width: $tablet) {
+        transform: none;
+    }
+}
+
+#prices-btn-3:checked ~ .prices-slider__inner .prices-slider__slides {
+    transform: translate(-560px);
+    @media (min-width: $tablet) {
+        transform: none;
     }
 }

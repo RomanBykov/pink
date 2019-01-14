@@ -31,6 +31,10 @@
     height: auto;
     max-height: 75px;
     transition: max-height 0.2s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
+
+    @media (min-width: $tablet) {
+        max-height: 150px;
+    }
 }
 
 #btn-1:checked ~ .slider__inner .slider__slides .slider__slide--1,
@@ -87,28 +91,36 @@
     opacity: 0.3;
 }
 
+// #btn-1:checked ~ .slider__controls label[for="btn-1"],
+// #btn-2:checked ~ .slider__controls label[for="btn-2"],
+// #btn-3:checked ~ .slider__controls label[for="btn-3"] {
+//     background-color: #ffffff;
+//     border-color: $navy;
+//     opacity: 1;
+// }
+
+#btn-1:hover ~ .slider__controls label[for="btn-1"],
+#btn-2:hover ~ .slider__controls label[for="btn-2"],
+#btn-3:hover ~ .slider__controls label[for="btn-3"] {
+    // background-color: $navy;
+    // border-width: 3px;
+    // border-style: solid;
+    // border-color: #ffffff;
+    opacity: 0.6;
+}
+
+// #btn-1:active ~ .slider__controls label[for="btn-1"],
+// #btn-2:active ~ .slider__controls label[for="btn-2"],
+// #btn-3:active ~ .slider__controls label[for="btn-3"] {
+//     opacity: 0.1;
+// }
+
 #btn-1:checked ~ .slider__controls label[for="btn-1"],
 #btn-2:checked ~ .slider__controls label[for="btn-2"],
 #btn-3:checked ~ .slider__controls label[for="btn-3"] {
     background-color: #ffffff;
     border-color: $navy;
     opacity: 1;
-}
-
-#btn-1:hover ~ .slider__controls label[for="btn-1"],
-#btn-2:hover ~ .slider__controls label[for="btn-2"],
-#btn-3:hover ~ .slider__controls label[for="btn-3"] {
-    background-color: $navy;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #ffffff;
-    opacity: 0.6;
-}
-
-#btn-1:active ~ .slider__controls label[for="btn-1"],
-#btn-2:active ~ .slider__controls label[for="btn-2"],
-#btn-3:active ~ .slider__controls label[for="btn-3"] {
-    opacity: 0.1;
 }
 
 #btn-1:checked ~ .slider__inner .slider__slides {

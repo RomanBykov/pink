@@ -43,9 +43,10 @@ gulp.task("sprite", function() {
     .pipe(cheerio({
         run: function ($) {
             $('[fill]').removeAttr('fill');
-        }
+        },
+        parserOptions: { xmlMode: true }
     }))
-    .pipe(svgmin(function (file) {
+    /*.pipe(svgmin(/*function (file) {
         var prefix = path.basename(file.relative, path.extname(file.relative));
         return {
             plugins: [{
@@ -55,7 +56,7 @@ gulp.task("sprite", function() {
                 }
             }]
         }
-    }))
+    }))*/
     .pipe(svgstore({
         inlineSvg: true
     }))

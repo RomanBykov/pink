@@ -173,115 +173,148 @@
                 </div>
             </section>
             <section class="prices">
-                <div class="prices__wrapper">
-                    <table class="prices__table table">
-                        <caption class="visually-hidden">Стоимость подписок</caption>
-                        <tr class="table__row table__row--header">
-                            <th class="table__header table__header--display-tablet"></th>
-                            <th class="table__header">
-                                <p class="table__header-bold">База</p>
-                                <p class="table__header-light">1,99 USD</p>
-                            </th>
-                            <th class="table__header">
-                                <p class="table__header-bold">Стандарт</p>
-                                <p class="table__header-light">3,99 USD</p>
-                            </th>
-                            <th class="table__header">
-                                <p class="table__header-bold">Анлим</p>
-                                <p class="table__header-light">9,99 USD</p>
-                            </th>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__data table__data--display-tablet">Розовый фильтр</td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Розовый фильтр</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Смайлики</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Комментарии</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__data table__data--display-tablet">Розовый фильтр</td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Смайлики</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Смайлики</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Комментарии</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr class="table__row">
-                            <td class="table__data table__data--display-tablet">Розовый фильтр</td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Комментарии</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Смайлики</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                            <td class="table__data">
-                                <span class="visually-hidden">Да</span>
-                                <span class="">Комментарии</span>
-                                <span>
-                                    <svg width="31" height="21">
-                                        <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
-                                    </svg>
-                                </span>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="prices__wrapper prices-slider">
+                    <input class="prices-slider__radio-1" type="radio" id="prices-btn-1" name="toggle" checked>
+                    <input class="prices-slider__radio-2" type="radio" id="prices-btn-2" name="toggle">
+                    <input class="prices-slider__radio-3" type="radio" id="prices-btn-3" name="toggle">
+                    <div class="prices-slider__controls">
+                        <label for="prices-btn-1"><span class="visually-hidden"></span></label>
+                        <label for="prices-btn-2"><span class="visually-hidden"></span></label>
+                        <label for="prices-btn-3"><span class="visually-hidden"></span></label>
+                    </div>
+                    <div class="prices-slider__inner">
+                        <div class="prices-slider__slides">
+                            <table class="prices__table table">
+                                <caption class="visually-hidden">Стоимость подписок</caption>
+                                <tr class="table__row table__row--header">
+                                    <th class="table__header table__header--display-tablet"></th>
+                                    <th class="table__header">
+                                        <p class="table__header-bold">База</p>
+                                        <p class="table__header-light">1,99 USD</p>
+                                    </th>
+                                    <th class="table__header promo-flag">
+                                        <p class="table__header-bold">Стандарт</p>
+                                        <p class="table__header-light">3,99 USD</p>
+                                    </th>
+                                    <th class="table__header">
+                                        <p class="table__header-bold">Анлим</p>
+                                        <p class="table__header-light">9,99 USD</p>
+                                    </th>
+                                </tr>
+
+                                <tr class="table__row">
+                                    <td class="table__data table__data--display-tablet">Розовый фильтр</td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Да</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Розовый фильтр</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Да</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Розовый фильтр</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Да</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Розовый фильтр</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="table__row">
+                                    <td class="table__data table__data--display-tablet">Смайлики</td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Нет</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Смайлики</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-no"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Нет</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Смайлики</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Да</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Смайлики</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="table__row">
+                                    <td class="table__data table__data--display-tablet">Комментарии</td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Да</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Комментарии</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-no"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Нет</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Комментарии</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-no"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="table__data">
+                                        <span class="visually-hidden">Да</span>
+                                        <div class="table__data-wrapper">
+                                            <span class="table__data-text">Комментарии</span>
+                                            <span class="table__data-svg">
+                                                <svg width="31" height="21">
+                                                    <use xlink:href="img/svg/sprite.svg#icon-yes"></use>
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
             </section>
