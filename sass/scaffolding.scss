@@ -49,10 +49,6 @@
 }
 
 .desktop-inline {
-    display: none;
-    // @media (min-width: $tablet) {
-    //     display: inline;
-    // }
     @media (min-width: $desktop) {
         display: inline;
     }

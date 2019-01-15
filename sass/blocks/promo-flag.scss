@@ -1,0 +1,64 @@
+.promo-flag {
+    position: relative;
+}
+
+.promo-flag::before,
+.promo-flag::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    z-index: 2;
+
+    // display: inline;
+    width: 74px;
+    height: 73px;
+
+
+    // background-color: $pink;
+    background-image: url("../../img/svg/bg-hit.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet) {
+        left: 0px;
+        // top: 3px;
+
+        width: 61px;
+        height: 61px;
+
+        background-image: url("../../img/svg/bg-hit-tablet.svg");
+    }
+
+    @media (min-width: $desktop) {
+        width: 74px;
+        height: 73px;
+
+        background-image: url("../../img/svg/bg-hit.svg");
+    }
+}
+
+.promo-flag::after {
+    content: "ХИТ";
+    top: 5px;
+    left: 0;
+
+    display: inline-block;
+
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+
+    background-image: none;
+    transform: rotate(-45deg);
+
+    @media (min-width: $tablet) {
+        top: 0;
+    }
+
+    @media (min-width: $desktop) {
+        top: 5px;
+    }
+}
