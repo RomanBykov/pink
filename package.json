@@ -20,7 +20,7 @@
         "test": "npm run editorconfig && npm run stylelint",
         "build": "gulp style",
         "start": "gulp serve",
-        "sprite": "gulp sprite",
+        "svg": "gulp svg",
         "html": "gulp html"
     },
     "browserslist": [

@@ -38,7 +38,7 @@ gulp.task("serve", ["style"], function() {
     gulp.watch("*.html").on("change", server.reload);
 });
 
-gulp.task("sprite", function() {
+gulp.task("svg", function() {
     return gulp.src("img/svg/*.svg")
     .pipe(cheerio({
         run: function ($) {

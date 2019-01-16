@@ -91,14 +91,19 @@
 .advantages-time__research-link {
     color: $pink;
     text-decoration: underline;
+
+    outline: none;
+
     @media (min-width: $desktop) {
         font-size: 18px;
         line-height: 30px;
     }
+
     &:hover,
     &:focus {
         color: $navy;
     }
+
     &:active {
         color: $navy;
         opacity: 0.3;

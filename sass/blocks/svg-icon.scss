@@ -1,6 +1,15 @@
 .svg-icon {
     fill: #ffffff;
+
     &:hover {
         fill: $pink;
+    }
+}
+
+.svg-icon--blue {
+    fill: $navy;
+
+    &:active {
+        fill: $navy;
     }
 }
