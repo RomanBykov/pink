@@ -25,6 +25,7 @@
 .content {
     padding-left: 20px;
     padding-right: 20px;
+
     @media (min-width: $desktop) {
         padding-left: 10px;
         padding-right: 10px;
@@ -33,6 +34,7 @@
 
 .tablet-inline {
     display: none;
+
     @media (min-width: $tablet) {
         display: inline;
     }
@@ -40,22 +42,46 @@
 
 .tablet-only-inline {
     display: none;
+
     @media (min-width: $tablet) {
         display: inline;
     }
+
     @media (min-width: $desktop) {
         display: none;
     }
 }
 
+.desktop-only-inline {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: inline;
+    }
+}
+
 .desktop-inline {
+
     @media (min-width: $desktop) {
         display: inline;
     }
 }
 
 .desktop-none {
+
     @media (min-width: $desktop) {
         display: none;
+    }
+}
+
+.tablet-except-inline {
+    display: inline;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+
+    @media (min-width: $desktop) {
+        display: inline;
     }
 }

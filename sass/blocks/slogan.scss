@@ -1,5 +1,8 @@
 .slogan {
     position: relative;
+
+    min-width: 280px;
+
     padding-top: 42px;
     padding-bottom: 36px;
     background-color: #ffffff;
@@ -16,7 +19,8 @@
 }
 
 .slogan__text {
-    margin: 0;
+    width: 280px;
+    margin: 0 auto;
     margin-bottom: 30px;
 
     font-family: $font-light;
@@ -27,6 +31,7 @@
     text-align: center;
 
     @media (min-width: $tablet) {
+        width: 620px;
         margin-bottom: 2px;
 
         font-size: 40px;
@@ -34,6 +39,7 @@
     }
 
     @media (min-width: $desktop) {
+        width: 920px;
         margin-bottom: 3px;
 
         font-size: 50px;
@@ -43,4 +49,27 @@
 
 .slogan__text--contacts {
     margin-bottom: 35px;
+}
+
+.slogan--header {
+    margin-top: 55px;
+
+    background-color: transparent;
+
+    @media (min-width: $tablet) {
+        margin-top: 132px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 107px;
+    }
+}
+
+.slogan__text--white {
+    color: #ffffff;
+
+    @media (min-width: $tablet) {
+        font-size: 50px;
+        line-height: 59px;
+    }
 }

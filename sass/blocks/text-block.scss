@@ -1,0 +1,36 @@
+.text-block {
+    padding-top: 45px;
+    padding-bottom: 48px;
+
+    background-color: #ffffff;
+    outline: 1px solid salmon;
+
+    @media (min-width: $tablet) {
+        padding-top: 91px;
+        padding-bottom: 75px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 93px;
+        padding-bottom: 87px;
+    }
+}
+
+.text-block__text {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    text-align: center;
+    line-height: 30px;
+
+    @media (min-width: $tablet) {
+        width: 450px;
+
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 770px;
+    }
+}

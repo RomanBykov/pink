@@ -71,7 +71,7 @@
     align-items: center;
     height: 69px;
     padding: 0 20px;
-    border-bottom: 1px solid #000000;
+    // border-top: 1px solid #000000;
     @media (min-width: $tablet) {
         height: 109px;
     }
@@ -144,6 +144,7 @@
 .main-nav__list {
     @include list;
     background-color: $navy;
+    border-top: 1px solid #000000;
     @media (min-width: $desktop) {
         display: flex;
         align-items: center;
@@ -174,4 +175,5 @@
 .main-nav--closed .main-nav__toggle-icon--burger,
 .main-nav--opened .main-nav__toggle-icon--cross {
     display: block;
+    transition: display .2s ease;
 }
