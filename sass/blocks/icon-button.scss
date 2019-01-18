@@ -1,0 +1,22 @@
+.icon-button {
+    width: 13px;
+    height: 12px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+}
+
+.icon-button svg {
+    fill: $navy-opacity-03;
+}
+
+.icon-button:hover svg,
+.icon-button:focus svg {
+    fill: $navy;
+}
+
+.icon-button:active svg,
+.icon-button--active svg {
+    fill: $pink;
+}

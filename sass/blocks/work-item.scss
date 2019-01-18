@@ -1,0 +1,25 @@
+.work-item--best {
+    width: 100%;
+}
+
+.work-item__image-wrapper {
+
+    // width: 100%;
+    // height: 100%;
+    margin: 0 auto;
+
+
+    overflow: hidden;
+    // outline: 1px solid green;
+
+    @media (min-width: $tablet) {
+        // width: 660px;
+        // height: 510px;
+    }
+}
+
+.work-item__image {
+    // width: 100%;
+    // height: 100%;
+    // object-fit: contain;
+}

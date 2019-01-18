@@ -1,0 +1,39 @@
+.comment {
+    // min-width: 280px;
+    margin: 0 20px;
+    padding: 18px 17px;
+
+
+    background-color: $grey;
+}
+
+.comment__author {
+    font-family: $font-bold;
+    font-style: normal;
+}
+
+.comment__time {
+    font-family: $font-light;
+}
+
+.comment__text {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.comment__like-icon {
+    margin-right: 19px;
+}
+
+.comment__action-text {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $pink;
+}
+
+.comment__like-wrapper {
+    display: flex;
+    align-items: center;
+    // outline: 1px solid red;
+}
