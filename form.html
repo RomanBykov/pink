@@ -64,8 +64,28 @@
             </div>
         </header>
         <main class="page-main">
-            <section class="text-block">
-                <p class="text-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+            <section class="text-block text-block--form">
+                <p class="text-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br class="tablet-inline">Пожалуйста, заполните форму ниже</p>
+            </section>
+            <section class="form">
+                <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="form__fieldset-wrapper">
+                        <fieldset class="form__fieldset">
+                            <div class="wrap">
+                                <label class="form__label" for="surname">Фамилия:</label>
+                                <input class="form__input" type="text" id="surname" placeholder="Укажите фамилию *">
+                            </div>
+                            <div class="wrap">
+                                <label class="form__label" for="name">Имя:</label>
+                                <input class="form__input" type="text" id="name" placeholder="Введите ваше имя *">
+                            </div>
+                            <div class="wrap">
+                                <label class="form__label" for="patronymic">Отчество:</label>
+                                <input class="form__input" type="text" id="patronymic" placeholder="Ну и отчество тоже">
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
             </section>
         </main>
         <footer class="page-footer">
