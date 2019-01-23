@@ -5,8 +5,13 @@
 
     background-color: #ffffff;
 
+    // @media (min-width: $tablet) {
+    //     padding-top: 71px;
+    //     padding-bottom: 71px;
+    // }
+
     @media (min-width: $desktop) {
-        padding-top: 71px;
+        padding-top: 103px;
         padding-bottom: 71px;
     }
 }

@@ -8,6 +8,7 @@
 
     display: flex;
     flex-direction: column;
+
     @media (min-width: $desktop) {
         flex-direction: row;
         justify-content: space-between;
@@ -20,6 +21,7 @@
 .main-nav__list-item {
     border-top: 1px solid #485461;
     border-bottom: 1px solid #000000;
+
     @media (min-width: $desktop) {
         border: none;
     }
@@ -34,16 +36,20 @@
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
+
     &:hover {
         color: $pink;
     }
+
     &:focus {
         color: $pink;
     }
+
     &:active {
         color: #ffffff;
         opacity: 0.3;
     }
+
     @media (min-width: $desktop) {
         padding: 14px 0;
 
@@ -71,10 +77,11 @@
     align-items: center;
     height: 69px;
     padding: 0 20px;
-    // border-top: 1px solid #000000;
+
     @media (min-width: $tablet) {
         height: 109px;
     }
+
     @media (min-width: $desktop) {
         padding: 0;
     }
@@ -85,9 +92,11 @@
     justify-content: center;
     align-items: center;
     min-height: 23px;
+
     &:focus svg {
         fill: $pink;
     }
+
     &:active svg {
         fill: #ffffff;
         opacity: 0.3;
@@ -102,6 +111,7 @@
 
 .main-nav__logo-icon--tablet {
     display: none;
+
     @media (min-width: $tablet) {
         display: block;
         margin-top: -14px;
@@ -114,6 +124,7 @@
 
 .main-nav__logo-icon--desktop {
     display: none;
+
     @media (min-width: $desktop) {
         display: block;
         margin-top: -14px;
@@ -129,13 +140,16 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+
     &:focus svg {
         fill: $pink;
     }
+
     &:active svg {
         fill: #ffffff;
         opacity: 0.3;
     }
+
     @media (min-width: $desktop) {
         display: none;
     }
@@ -145,6 +159,7 @@
     @include list;
     background-color: $navy;
     border-top: 1px solid #000000;
+
     @media (min-width: $desktop) {
         display: flex;
         align-items: center;
@@ -176,4 +191,9 @@
 .main-nav--opened .main-nav__toggle-icon--cross {
     display: block;
     transition: display .2s ease;
+}
+
+.main-nav__toggle-icon--cross {
+    margin-top: 3px;
+    margin-right: -1px;
 }

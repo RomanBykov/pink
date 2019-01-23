@@ -61,6 +61,7 @@
     @include list;
     display: flex;
     justify-content: space-between;
+    flex-shrink: 0;
     width: 177px;
     margin-bottom: 37px;
 
@@ -73,6 +74,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     width: 45px;
     height: 45px;
 
@@ -104,11 +106,19 @@
         width: 177px;
         justify-content: flex-end;
     }
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
 }
 
 .social__developer-icon {
     fill: $pink;
     margin-left: 15px;
+
+    // @media (min-width: $desktop) {
+    //     margin-left: 25px;
+    // }
 }
 
 .social__developer:hover .social__developer-icon,

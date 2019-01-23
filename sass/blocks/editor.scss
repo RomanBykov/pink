@@ -1,0 +1,197 @@
+.editor {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 41px;
+    background-color: $grey;
+
+    @media (min-width: $tablet) {
+        padding-top: 57px;
+        padding-bottom: 54px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 780px;
+        margin: 0 auto;
+        padding: 57px 80px;
+    }
+}
+
+.editor::after {
+    content: "";
+
+    position: absolute;
+    bottom: 201px;
+    left: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background-color: #dddfe0;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.editor__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet) {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+    }
+}
+
+.editor__button {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet) {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+.editor__submit-buttons button:first-child {
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 21px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 0;
+    }
+}
+
+.editor__icon {
+    display: inline-block;
+    fill: $navy;
+    opacity: 0.3;
+    flex-shrink: 0;
+
+    @media (min-width: $tablet) {
+        transform: scale(0.5);
+    }
+
+    @media (min-width: $desktop) {
+        transform: scale(1);
+    }
+}
+
+.editor__button:hover .editor__icon,
+.editor__button:focus .editor__icon {
+    opacity: 0.5;
+}
+
+.editor__button:active .editor__icon,
+.editor__icon--active {
+    fill: $pink;
+    opacity: 1;
+}
+
+.editor__icon--active-tablet {
+    @media (min-width: $tablet) {
+        fill: $pink;
+        opacity: 1;
+    }
+}
+
+.editor__ranges-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 0;
+        margin-right: 5px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-right: 0px;
+    }
+}
+
+.editor__range--tablet {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+}
+
+.editor__wrapper {
+    @media (min-width: $tablet) {
+        display: flex;
+        width: 620px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+        // display: flex;
+        width: 801px;
+        // margin: 0 auto;
+    }
+}
+
+.editor__controls-wrapper {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        width: 260px;
+        margin-left: auto;
+        margin-right: 13px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 410px;
+        margin-left: auto;
+        margin-right: 0;
+    }
+}
+
+.editor__btns-ranges-wrapper {
+    @media (min-width: $tablet) {
+        display: flex;
+    }
+
+    @media (min-width: $desktop) {
+        margin-right: 30px;
+    }
+}
+
+.editor__submit-buttons {
+    margin-top: auto;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.editor__submit-buttons .button {
+    @media (min-width: $desktop) {
+        width: 183px;
+    }
+}

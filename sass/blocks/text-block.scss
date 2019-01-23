@@ -3,16 +3,32 @@
     padding-bottom: 48px;
 
     background-color: #ffffff;
-    // outline: 1px solid salmon;
 
     @media (min-width: $tablet) {
         padding-top: 91px;
-        padding-bottom: 75px;
+        padding-bottom: 77px;
     }
 
     @media (min-width: $desktop) {
         padding-top: 93px;
-        padding-bottom: 87px;
+        padding-bottom: 88px;
+    }
+}
+
+.text-block--small-padding {
+    padding-top: 43px;
+    padding-bottom: 43px;
+
+    background-color: #ffffff;
+
+    @media (min-width: $tablet) {
+        padding-top: 65px;
+        padding-bottom: 67px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 60px;
+        padding-bottom: 63px;
     }
 }
 

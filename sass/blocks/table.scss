@@ -72,6 +72,7 @@
 .table__data--display-tablet,
 .table__header--display-tablet {
     display: none;
+
     @media (min-width: $tablet) {
         display: table-cell;
         padding-left: 20px;

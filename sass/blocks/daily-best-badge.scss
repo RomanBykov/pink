@@ -1,0 +1,38 @@
+.daily-best-badge {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-width: $desktop) {
+        max-width: 940px;
+    }
+}
+
+.daily-best-badge::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 2;
+
+    width: 140px;
+    height: 36px;
+
+    font-family: $font-bold;
+    font-size: 12px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: $pink;
+
+    @media (min-width: $tablet) {
+        top: 57px;
+    }
+
+    @media (min-width: $desktop) {
+        top: 54px;
+        right: 0;
+    }
+}
