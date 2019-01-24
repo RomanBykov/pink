@@ -1,11 +1,90 @@
 .form {
-    outline: 1px solid blue;
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 11px;
+    }
+}
+
+.form__form {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .form__fieldset-wrapper {
     padding: 0 20px;
+    padding-bottom: 25px;
+    padding-top: 31px;
 
     background-color: #ffffff;
+}
+
+.form__fieldset-wrapper--grey {
+    padding-top: 37px;
+    padding-bottom: 0;
+
+    background-color: $grey;
+
+    @media (min-width: $tablet) {
+        background-color: #ffffff;
+    }
+}
+
+.form__fieldset-wrapper--name {
+    @media (min-width: $tablet) {
+        order: 0;
+        padding-top: 0;
+    }
+}
+
+.form__fieldset-wrapper--apps {
+    padding-top: 38px;
+    padding-bottom: 6px;
+
+    @media (min-width: $tablet) {
+        padding-top: 27px;
+        order: 1;
+        background-color: #ffffff;
+    }
+}
+
+.form__fieldset-wrapper--achievements {
+    @media (min-width: $tablet) {
+        order: 3;
+    }
+}
+
+.form__fieldset-wrapper--contacts {
+    @media (min-width: $tablet) {
+        order: 2;
+        margin-top: 20px;
+        padding-bottom: 18px;
+    }
+}
+
+.form__fieldset-wrapper--comment {
+    padding-top: 38px;
+    padding-bottom: 47px;
+
+    @media (min-width: $tablet) {
+        order: 4;
+        padding-top: 58px;
+        padding-bottom: 66px;
+    }
+}
+
+.form__footer-wrapper {
+    margin: 0 20px;
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 620px;
+        margin: 0 auto;
+        order: 5;
+    }
 }
 
 .form__fieldset {
@@ -19,8 +98,23 @@
     @media (min-width: $tablet) {
         // flex-direction: row;
         // flex-wrap: wrap;
-        width: 620px;
+        width: 500px;
         margin: 0 auto;
+        padding-left: 59px;
+        padding-right: 59px;
+
+        border: 1px solid $grey;
+        border-radius: 3px;
+    }
+}
+
+.form__fieldset--full-width {
+    @media (min-width: $tablet) {
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+        border: none;
     }
 }
 
@@ -33,9 +127,7 @@
     color: $pink;
     line-height: 30px;
     text-transform: uppercase;
-    vertical-align: middle;
-
-    // outline: 1px solid red;
+    vertical-align: top;
 
     @media (min-width: $tablet) {
         height: 63px;
@@ -43,6 +135,14 @@
         margin-right: 19px;
 
         line-height: 63px;
+    }
+}
+
+.form__label--contacts {
+    @media (min-width: $tablet) {
+        height: 50px;
+        margin-left: 20px;
+        line-height: 50px;
     }
 }
 
@@ -61,8 +161,11 @@
     border-width: 2px;
     border-style: solid;
     border-color: $grey-darker;
-    border-radius: 2px;
+    border-radius: 3px;
     background-color: #ffffff;
+    vertical-align: middle;
+
+    outline: none;
 
     @media (min-width: $tablet) {
         width: auto;
@@ -71,11 +174,16 @@
     }
 }
 
+.form__input--no-margin {
+    margin-bottom: 0;
+}
+
+.form__input:focus,
 .form__input:hover {
     border-color: $navy;
 }
 
-.form__input:focus {
+.form__input:active {
     border-color: $pink;
 }
 
@@ -86,11 +194,156 @@
     color: $navy;
 }
 
-.wrap {
+.form__input--contacts {
+    @media (min-width: $tablet) {
+        order: -1;
+        margin-bottom: 0;
+        padding-right: 60px;
+        padding-left: 18px
+    }
+}
+
+
+.form__wrap {
     @media (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
         width: 620px;
+        margin: 0 auto;
         justify-content: space-between;
     }
+}
+
+.form__wrap--contacts {
+    @media (min-width: $tablet) {
+        position: relative;
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 14px;
+    }
+}
+
+.form__wrap--contacts::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+
+    width: 60px;
+    height: 59px;
+
+    background-color: $grey-darker;
+    background-image: url("../../img/svg/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form__wrap--contacts-mail::before {
+    background-image: url("../../img/svg/icon-mail.svg");
+}
+
+.form__legend {
+    margin-bottom: 39px;
+
+    color: $pink;
+    text-align: center;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+        padding: 0 24px;
+        margin-bottom: 25px;
+    }
+}
+
+.form__legend--apps {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 44px;
+    }
+}
+
+.form__legend--achievements {
+    @media (min-width: $tablet) {
+        margin-bottom: 44px;
+    }
+}
+
+.form__legend--comment {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 37px;
+    }
+}
+
+.form__legend--contacts {
+    margin-bottom: 37px;
+}
+
+.form__comment {
+    display: block;
+    width: 100%;
+    height: 201px;
+    padding: 14px 19px;
+
+    font-size: 18px;
+    line-height: 30px;
+    color: $navy;
+
+    border: 2px solid $grey;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: scroll;
+    outline: none;
+
+    @media (min-width: $tablet) {
+        height: 193px;
+        margin-bottom: 52px;
+    }
+}
+
+.form__comment:focus,
+.form__comment:hover {
+    border-color: $navy;
+}
+
+.form__comment:active {
+    border-color: $pink;
+}
+
+.form__comment::placeholder {
+    font-family: $font-normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $navy;
+    font-weight: 400px;
+}
+
+.form__submit-wrapper {
+    // padding: 0 20px;
+    @media (min-width: $tablet) {
+        width: 300px;
+    }
+}
+
+.form__submit-btn {
+    margin-bottom: 39px;
+}
+
+.form__tip {
+    margin: 0 auto;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form__tip sup {
+    color: $pink;
+    vertical-align: top;
+}
+
+.form__inputs-list {
+
 }

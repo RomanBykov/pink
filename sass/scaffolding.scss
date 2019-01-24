@@ -1,5 +1,6 @@
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
+    z-index: -1;
 
     width: 1px;
     height: 1px;
@@ -61,6 +62,7 @@
 }
 
 .desktop-inline {
+    display: none;
 
     @media (min-width: $desktop) {
         display: inline;
@@ -83,5 +85,11 @@
 
     @media (min-width: $desktop) {
         display: inline;
+    }
+}
+
+.tablet-none {
+    @media (min-width: $tablet) {
+        display: none;
     }
 }
