@@ -46,6 +46,8 @@
 }
 
 .form__fieldset-wrapper--name {
+    padding-bottom: 42px;
+
     @media (min-width: $tablet) {
         order: 0;
         padding-top: 0;
@@ -381,7 +383,7 @@
     border: 2px solid $grey;
     box-sizing: border-box;
     border-radius: 3px;
-    overflow: scroll;
+    // overflow-y: scroll;
     outline: none;
 
     @media (min-width: $tablet) {
