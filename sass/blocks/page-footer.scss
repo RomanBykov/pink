@@ -23,3 +23,9 @@
         display: block;
     }
 }
+
+.page-footer--form {
+    @media (min-width: $desktop) {
+        padding-top: 24px;
+    }
+}

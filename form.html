@@ -65,7 +65,7 @@
         </header>
         <main class="page-main">
             <section class="text-block text-block--form">
-                <p class="text-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br><span class="tablet-inline">Пожалуйста, заполните форму ниже:</span></p>
+                <p class="text-block__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<br class="desktop-none"><span class="tablet-inline">Пожалуйста, заполните форму ниже:</span></p>
             </section>
             <section class="form">
                 <form class="form__form" action="https://echo.htmlacademy.ru" method="post">
@@ -117,22 +117,24 @@
                         </fieldset>
                     </div>
                     <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
-                        <fieldset class="form__fieldset">
+                        <fieldset class="form__fieldset form__fieldset--contacts">
                             <legend class="form__legend form__legend--contacts">Контактная информация</legend>
-                            <div class="form__wrap form__wrap--contacts">
-                                <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
-                                <input class="form__input form__input--contacts" type="number" id="phone" placeholder="Номер, пожалуйста">
-                            </div>
-                            <div class="form__wrap form__wrap--contacts form__wrap--contacts-mail">
-                                <label class="form__label form__label--contacts" for="email">Адрес почты</label>
-                                <input class="form__input form__input--contacts" type="email" id="email" placeholder="Введите почту *">
+                            <div class="form__contacts-wrapper">
+                                <div class="form__wrap form__wrap--contacts">
+                                    <label class="form__label form__label--contacts" for="phone">Номер телефона</label>
+                                    <input class="form__input form__input--contacts" type="number" id="phone" placeholder="Номер, пожалуйста">
+                                </div>
+                                <div class="form__wrap form__wrap--contacts form__wrap--contacts-mail">
+                                    <label class="form__label form__label--contacts" for="email">Адрес почты</label>
+                                    <input class="form__input form__input--contacts" type="email" id="email" placeholder="Введите почту *">
+                                </div>
                             </div>
                         </fieldset>
                     </div>
                     <div class="form__fieldset-wrapper form__fieldset-wrapper--grey form__fieldset-wrapper--apps">
-                        <fieldset class="form__fieldset">
+                        <fieldset class="form__fieldset form__fieldset--apps">
                             <legend class="form__legend form__legend--apps">С каким приложением <br class="tablet-none">путешествовали?</legend>
-                            <ul class="input-list form__inputs-list">
+                            <ul class="input-list form__inputs-list form__inputs-list--apps">
                                 <li class="input-list__item">
                                     <input class="input-list__input" type="radio" name="app" value="app-ios" id="radio-ios" checked>
                                     <label class="input-list__label input-list__label--radio" for="radio-ios">Pink для iOS</label>
@@ -159,13 +161,13 @@
                             <button class="form__submit-btn submit-btn" type="submit">Отправить форму</button>
                         </div>
                         <div class="form__tip-wrapper">
-                            <p class="form__tip"><sup>*</sup> — обязательные поля</p>
+                            <p class="form__tip"><sup>*</sup> — обязательные<span class="desktop-only-inline"> для заполнения</span> поля</p>
                         </div>
                     </div>
                 </form>
             </section>
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer page-footer--form">
             <div class="social">
                 <a class="social__logo svg-icon svg-icon--blue" href="index.html">
                     <svg class="social__logo-svg social__logo-svg--mobile" width="147" height="40">
