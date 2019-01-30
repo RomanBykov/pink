@@ -115,6 +115,7 @@
 
 .form__footer-wrapper {
     margin: 0 20px;
+
     @media (min-width: $tablet) {
         display: flex;
         justify-content: space-between;
@@ -254,7 +255,7 @@
         order: -1;
         margin-bottom: 0;
         padding-right: 60px;
-        padding-left: 18px
+        padding-left: 18px;
     }
 }
 
