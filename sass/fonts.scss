@@ -1,26 +1,29 @@
 @font-face {
-    font-family: "OpenSans";
-    src: local("OpenSans");
-    src: url("../fonts/opensans.woff");
-    src: url("../fonts/opensans.woff2");
     font-weight: 400;
+    font-family: "OpenSans";
     font-style: normal;
+    font-display: swap;
+    src: local("OpenSans");
+    src: url("../fonts/opensans.woff2"),
+        url("../fonts/opensans.woff");
 }
 
 @font-face {
-    font-family: "OpenSansBold";
-    src: local("OpenSansBold");
-    src: url("../fonts/opensansbold.woff");
-    src: url("../fonts/opensansbold.woff2");
     font-weight: 700;
+    font-family: "OpenSansBold";
     font-style: normal;
+    font-display: swap;
+    src: local("OpenSansBold");
+    src: url("../fonts/opensansbold.woff2"),
+        url("../fonts/opensansbold.woff");
 }
 
 @font-face {
-    font-family: "OpenSansLight";
-    src: local("OpenSansLight");
-    src: url("../fonts/opensanslight.woff");
-    src: url("../fonts/opensanslight.woff2");
     font-weight: 300;
+    font-family: "OpenSansLight";
     font-style: normal;
+    font-display: swap;
+    src: local("OpenSansLight");
+    src: url("../fonts/opensanslight.woff2"),
+        url("../fonts/opensanslight.woff");
 }
