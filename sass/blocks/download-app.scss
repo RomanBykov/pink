@@ -3,7 +3,6 @@
     @media (min-width: $tablet) {
         position: absolute;
         top: -555px;
-        // top: 0;
         left: 20px;
 
         background-color: transparent;
@@ -23,7 +22,6 @@
     text-align: center;
     color: #ffffff;
 
-    // outline: 1px solid yellow;
     @media (min-width: $tablet) {
         width: 300px;
         padding: 28px 0;
@@ -80,7 +78,6 @@
 .download-app__link {
     display: flex;
     justify-content: center;
-    // align-items: center;
     width: 56px;
     height: 56px;
 

@@ -103,6 +103,7 @@
 
 .editor__button:hover .editor__icon,
 .editor__button:focus .editor__icon {
+    fill: $navy;
     opacity: 0.5;
 }
 
