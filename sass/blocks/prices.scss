@@ -19,10 +19,7 @@
     width: 320px;
     margin: 0 auto;
 
-    // overflow: hidden;
-
     @media (min-width: $tablet) {
         width: 100%;
-        overflow: visible;
     }
 }

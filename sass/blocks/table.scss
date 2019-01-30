@@ -60,7 +60,7 @@
     border: 2px solid $grey-darker;
     box-sizing: border-box;
 
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
         height: 47px;
     }
 
@@ -83,13 +83,13 @@
     background-color: $grey;
     border-left-color: $grey;
     border-top-color: $grey;
-    border: none;
+    border-bottom: none;
 }
 
 .table__data--display-tablet {
-    text-align: left;
-    // color: red;
     padding-left: 15px;
+
+    text-align: left;
 
     @media (min-width: $desktop) {
         font-size: 18px;
@@ -137,6 +137,7 @@
 
 .table__data-text {
     text-transform: uppercase;
+
     @media (min-width: $tablet) {
         display: none;
     }

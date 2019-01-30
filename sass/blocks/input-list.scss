@@ -7,8 +7,6 @@
 }
 
 .input-list--achievements {
-    // margin-bottom: 0px;
-
     @media (min-width: $tablet) {
         margin-bottom: 4px;
     }
@@ -19,16 +17,11 @@
 
         flex-wrap: wrap;
         height: 170px;
-        // display: grid;
-        // grid-template-columns: repeat(3, 260px);
-        // grid-column-gap: 54px;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
     }
 }
 
 .form__inputs-list--apps {
-    @media  (min-width: $desktop) {
+    @media (min-width: $desktop) {
         margin-left: 9px;
     }
 }

@@ -61,13 +61,6 @@
     background-image: url("../../img/bg-map-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: center -445px;
-    // background-size: cover;
-
-    // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    //     background-image: url("../../img/bg-map-tablet@2x.jpg");
-    //     background-size: cover;
-    //     background-position: 0 -311px;
-    // }
 
     @media (min-width: $tablet) {
         background-image: url("../../img/bg-map-desktop@1x.jpg");

@@ -5,14 +5,14 @@
     "description": "Личный проект «Пинк» от HTML Academy",
     "devDependencies": {
         "@htmlacademy/editorconfig-cli": "1.x",
-        "autoprefixer": "7.1.x",
+        "autoprefixer": "^7.1.6",
         "browser-sync": "2.18.x",
         "gulp": "3.9.x",
         "gulp-plumber": "1.1.x",
         "gulp-postcss": "7.0.x",
         "gulp-sass": "3.1.x",
-        "stylelint": "^8.1.1",
-        "stylelint-config-htmlacademy": "0.1.x"
+        "stylelint": "^8.4.0",
+        "stylelint-config-htmlacademy": "^0.1.1"
     },
     "scripts": {
         "editorconfig": "editorconfig-cli",
@@ -43,7 +43,7 @@
         "gulp-imagemin": "^5.0.3",
         "gulp-posthtml": "^3.0.4",
         "gulp-rename": "^1.4.0",
-        "gulp-svgstore": "^7.0.0",
+        "gulp-svgstore": "^7.0.1",
         "gulp-webp": "^3.0.0",
         "posthtml-include": "^1.2.0",
         "run-sequence": "^2.2.1"

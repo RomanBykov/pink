@@ -1,5 +1,6 @@
 .download-app {
     background-color: #1d2631;
+
     @media (min-width: $tablet) {
         position: absolute;
         top: -555px;
@@ -7,10 +8,11 @@
 
         background-color: transparent;
     }
+
     @media (min-width: $desktop) {
         position: absolute;
         top: -660px;
-        left: 0px;
+        left: 0;
     }
 }
 
@@ -43,6 +45,7 @@
     @media (min-width: $tablet) {
         display: block;
     }
+
     @media (min-width: $desktop) {
         font-size: 50px;
         line-height: 59px;
@@ -53,9 +56,11 @@
 
 .download-app__button {
     margin-bottom: 32px;
+
     @media (min-width: $tablet) {
         margin-bottom: 46px;
     }
+
     @media (min-width: $desktop) {
         margin-bottom: 69px;
     }
@@ -66,10 +71,12 @@
     justify-content: space-between;
     margin-bottom: 19px;
     padding: 0 33px;
+
     @media (min-width: $tablet) {
         margin-bottom: 34px;
         padding: 0 41px;
     }
+
     @media (min-width: $desktop) {
         margin-bottom: 50px;
     }

@@ -130,7 +130,7 @@
     }
 
     @media (min-width: $desktop) {
-        margin-right: 0px;
+        margin-right: 0;
     }
 }
 
@@ -150,9 +150,7 @@
     }
 
     @media (min-width: $desktop) {
-        // display: flex;
         width: 801px;
-        // margin: 0 auto;
     }
 }
 
