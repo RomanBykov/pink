@@ -15,21 +15,11 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var run = require("run-sequence");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
+var uglifyjs = require("gulp-uglify");
+var pump = require("pump");
 
-gulp.task("style", function() {
-    gulp.src("sass/style.scss")
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(postcss([
-            autoprefixer()
-        ]))
-        .pipe(gulp.dest("build/css"))
-        .pipe(minify())
-        .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"))
-        .pipe(server.stream());
-});
-
+// Разовые таски, не идущие в билд
 gulp.task("images", function() {
     return gulp.src("img/**/*.{png,jpg}")
     .pipe(imagemin([
@@ -45,8 +35,15 @@ gulp.task("images-svg", function() {
         imagemin.svgo()
     ))
     .pipe(gulp.dest("img/svg"));
-})
+});
 
+gulp.task("webp", function() {
+    return gulp.src("img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("img"));
+});
+
+// Регулярно используемые таски идущие в билд и в живой сервер
 gulp.task("sprite", function() {
     return gulp.src("img/svg/*.svg")
     .pipe(svgstore({
@@ -65,10 +62,20 @@ gulp.task("html", function() {
     .pipe(server.stream());
 });
 
-gulp.task("webp", function() {
-    return gulp.src("img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("img"));
+gulp.task("minify-html", function() {
+    return gulp.src("build/*.html")
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify-js", function(cb) {
+    pump([
+        gulp.src("build/js/*.js"),
+        uglifyjs(),
+        rename("script.min.js"),
+        gulp.dest("build/js")
+    ]),
+    cb
 });
 
 gulp.task("copy", function() {
@@ -86,6 +93,33 @@ gulp.task("clean", function() {
     return del("build");
 });
 
+gulp.task("style", function() {
+    gulp.src("sass/style.scss")
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(gulp.dest("build/css"))
+        .pipe(minify())
+        .pipe(rename("style.min.css"))
+        .pipe(gulp.dest("build/css"))
+        .pipe(server.stream());
+});
+
+gulp.task("build", function (done) {
+    run(
+        "clean",
+        "copy",
+        "style",
+        "sprite",
+        "html",
+        "minify-html",
+        "minify-js",
+        done
+    );
+});
+
 gulp.task("serve", function () {
     server.init({
         server: "build/",
@@ -96,15 +130,4 @@ gulp.task("serve", function () {
     });
     gulp.watch("sass/**/*.scss", ["style"]);
     gulp.watch("*.html", ["html"]);
-});
-
-gulp.task("build", function (done) {
-    run(
-        "clean",
-        "copy",
-        "style",
-        "sprite",
-        "html",
-        done
-    );
 });
