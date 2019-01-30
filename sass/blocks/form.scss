@@ -110,7 +110,6 @@
 
     @media (min-width: $desktop) {
         width: 100%;
-        // padding-bottom: 64px;
     }
 }
 
@@ -131,16 +130,12 @@
 }
 
 .form__fieldset {
-    // display: flex;
-    // flex-direction: column;
     margin: 0;
     padding: 0;
 
     border: none;
 
     @media (min-width: $tablet) {
-        // flex-direction: row;
-        // flex-wrap: wrap;
         width: 500px;
         margin: 0 auto;
         padding-left: 58px;
@@ -383,7 +378,6 @@
     border: 2px solid $grey;
     box-sizing: border-box;
     border-radius: 3px;
-    // overflow-y: scroll;
     outline: none;
 
     @media (min-width: $tablet) {
@@ -415,7 +409,6 @@
 }
 
 .form__submit-wrapper {
-    // padding: 0 20px;
     @media (min-width: $tablet) {
         width: 300px;
     }

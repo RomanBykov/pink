@@ -21,7 +21,6 @@
 
 .slider__inner {
     min-width: 280px;
-    // max-width: 940px;
 
     overflow: hidden;
 }
@@ -37,9 +36,9 @@
     }
 }
 
-#btn-1:checked ~ .slider__inner .slider__slides .slider__slide--1,
-#btn-2:checked ~ .slider__inner .slider__slides .slider__slide--2,
-#btn-3:checked ~ .slider__inner .slider__slides .slider__slide--3 {
+.slider__radio-1:checked ~ .slider__inner .slider__slides .slider__slide--1,
+.slider__radio-2:checked ~ .slider__inner .slider__slides .slider__slide--2,
+.slider__radio-3:checked ~ .slider__inner .slider__slides .slider__slide--3 {
     max-height: 500px;
     transition: max-height 0.2s ease 0s;
 }
@@ -91,46 +90,28 @@
     opacity: 0.3;
 }
 
-// #btn-1:checked ~ .slider__controls label[for="btn-1"],
-// #btn-2:checked ~ .slider__controls label[for="btn-2"],
-// #btn-3:checked ~ .slider__controls label[for="btn-3"] {
-//     background-color: #ffffff;
-//     border-color: $navy;
-//     opacity: 1;
-// }
-
-#btn-1:hover ~ .slider__controls label[for="btn-1"],
-#btn-2:hover ~ .slider__controls label[for="btn-2"],
-#btn-3:hover ~ .slider__controls label[for="btn-3"] {
-    // background-color: $navy;
-    // border-width: 3px;
-    // border-style: solid;
-    // border-color: #ffffff;
+.slider__radio-1:hover ~ .slider__controls label[for="btn-1"],
+.slider__radio-2:hover ~ .slider__controls label[for="btn-2"],
+.slider__radio-3:hover ~ .slider__controls label[for="btn-3"] {
     opacity: 0.6;
 }
 
-// #btn-1:active ~ .slider__controls label[for="btn-1"],
-// #btn-2:active ~ .slider__controls label[for="btn-2"],
-// #btn-3:active ~ .slider__controls label[for="btn-3"] {
-//     opacity: 0.1;
-// }
-
-#btn-1:checked ~ .slider__controls label[for="btn-1"],
-#btn-2:checked ~ .slider__controls label[for="btn-2"],
-#btn-3:checked ~ .slider__controls label[for="btn-3"] {
+.slider__radio-1:checked ~ .slider__controls label[for="btn-1"],
+.slider__radio-2:checked ~ .slider__controls label[for="btn-2"],
+.slider__radio-3:checked ~ .slider__controls label[for="btn-3"] {
     background-color: #ffffff;
     border-color: $navy;
     opacity: 1;
 }
 
-#btn-1:checked ~ .slider__inner .slider__slides {
+.slider__radio-1:checked ~ .slider__inner .slider__slides {
     transform: translate(0);
 }
 
-#btn-2:checked ~ .slider__inner .slider__slides {
+.slider__radio-2:checked ~ .slider__inner .slider__slides {
     transform: translate(calc(100% / 3 * -1));
 }
 
-#btn-3:checked ~ .slider__inner .slider__slides {
+.slider__radio-3:checked ~ .slider__inner .slider__slides {
     transform: translate(calc(100% / 3 * -2));
 }

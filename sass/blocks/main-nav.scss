@@ -172,7 +172,7 @@
 
 .main-nav--nojs .main-nav__toggle,
 .main-nav--closed .main-nav__list,
-.main-nav__toggle-icon  {
+.main-nav__toggle-icon {
     display: none;
 }
 
@@ -190,7 +190,7 @@
 .main-nav--closed .main-nav__toggle-icon--burger,
 .main-nav--opened .main-nav__toggle-icon--cross {
     display: block;
-    transition: display .2s ease;
+    transition: display 0.2s ease;
 }
 
 .main-nav__toggle-icon--cross {

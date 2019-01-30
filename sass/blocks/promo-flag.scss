@@ -6,23 +6,19 @@
 .promo-flag::after {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: -2px;
     z-index: 2;
 
-    // display: inline;
     width: 74px;
     height: 73px;
 
-
-    // background-color: $pink;
     background-image: url("../../img/svg/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
     @media (min-width: $tablet) {
-        left: 0px;
-        // top: 3px;
+        left: 0;
 
         width: 61px;
         height: 61px;

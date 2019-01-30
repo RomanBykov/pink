@@ -1,12 +1,8 @@
 .advantages {
-    // padding: 0 20px;
     padding-top: 48px;
     background-color: $grey;
 
-    // outline: 1px solid red;
     @media (min-width: $tablet) {
-
-        // padding: 0 130px;
         padding-top: 27px;
     }
 }
@@ -15,13 +11,13 @@
     @include list;
     display: flex;
     flex-direction: column;
+
     @media (min-width: $tablet) {
         width: 310px;
     }
+
     @media (min-width: $desktop) {
         width: auto;
-        // max-width: 880px;
-        // margin: 0 auto;
         padding: 0 30px;
         flex-direction: row;
         justify-content: space-between;
@@ -32,10 +28,12 @@
     flex-shrink: 0;
     text-align: center;
     margin-bottom: 31px;
+
     @media (min-width: $tablet) {
         text-align: left;
         margin-bottom: 35px;
     }
+
     @media (min-width: $desktop) {
         width: 240px;
 
@@ -46,6 +44,7 @@
 .advantages__header {
     margin: 0;
     margin-bottom: 12px;
+
     @media (min-width: $desktop) {
         margin-bottom: 23px;
     }
@@ -79,7 +78,6 @@
     display: flex;
     justify-content: center;
 
-    // outline: 1px solid red;
     @media (min-width: $desktop) {
         justify-content: space-between;
         padding: 0 5px;
@@ -92,12 +90,14 @@
     margin: 0;
     margin-top: 10px;
     overflow: hidden;
+
     @media (min-width: $tablet) {
         position: relative;
         z-index: 1;
         height: 481px;
         margin-top: -70px;
     }
+
     @media (min-width: $desktop) {
         height: 302px;
         margin-top: -118px;
@@ -107,6 +107,7 @@
 
 .advantages__img--tablet {
     display: none;
+
     @media (min-width: $desktop) {
         display: block;
     }
