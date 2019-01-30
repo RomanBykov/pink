@@ -1,0 +1,136 @@
+.slider {
+    position: relative;
+    min-width: 280px;
+}
+
+.slider input[type="radio"] {
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    transform: translate(-50%);
+    outline: none;
+
+    @media (min-width: $tablet) {
+        bottom: -42px;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.slider__inner {
+    min-width: 280px;
+    // max-width: 940px;
+
+    overflow: hidden;
+}
+
+.slider__slide {
+    width: 100%;
+    height: auto;
+    max-height: 75px;
+    transition: max-height 0.2s cubic-bezier(0.39, 0.58, 0.57, 1) 0s;
+
+    @media (min-width: $tablet) {
+        max-height: 150px;
+    }
+}
+
+#btn-1:checked ~ .slider__inner .slider__slides .slider__slide--1,
+#btn-2:checked ~ .slider__inner .slider__slides .slider__slide--2,
+#btn-3:checked ~ .slider__inner .slider__slides .slider__slide--3 {
+    max-height: 500px;
+    transition: max-height 0.2s ease 0s;
+}
+
+.slider__slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.2s ease;
+}
+
+.slider__controls {
+    position: absolute;
+    bottom: -54px;
+    left: 50%;
+    z-index: 1;
+
+    width: 62px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+        bottom: -42px;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.slider__controls label {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+
+    vertical-align: top;
+
+    background-color: $navy;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #ffffff;
+
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+// #btn-1:checked ~ .slider__controls label[for="btn-1"],
+// #btn-2:checked ~ .slider__controls label[for="btn-2"],
+// #btn-3:checked ~ .slider__controls label[for="btn-3"] {
+//     background-color: #ffffff;
+//     border-color: $navy;
+//     opacity: 1;
+// }
+
+#btn-1:hover ~ .slider__controls label[for="btn-1"],
+#btn-2:hover ~ .slider__controls label[for="btn-2"],
+#btn-3:hover ~ .slider__controls label[for="btn-3"] {
+    // background-color: $navy;
+    // border-width: 3px;
+    // border-style: solid;
+    // border-color: #ffffff;
+    opacity: 0.6;
+}
+
+// #btn-1:active ~ .slider__controls label[for="btn-1"],
+// #btn-2:active ~ .slider__controls label[for="btn-2"],
+// #btn-3:active ~ .slider__controls label[for="btn-3"] {
+//     opacity: 0.1;
+// }
+
+#btn-1:checked ~ .slider__controls label[for="btn-1"],
+#btn-2:checked ~ .slider__controls label[for="btn-2"],
+#btn-3:checked ~ .slider__controls label[for="btn-3"] {
+    background-color: #ffffff;
+    border-color: $navy;
+    opacity: 1;
+}
+
+#btn-1:checked ~ .slider__inner .slider__slides {
+    transform: translate(0);
+}
+
+#btn-2:checked ~ .slider__inner .slider__slides {
+    transform: translate(calc(100% / 3 * -1));
+}
+
+#btn-3:checked ~ .slider__inner .slider__slides {
+    transform: translate(calc(100% / 3 * -2));
+}

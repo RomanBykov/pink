@@ -1,0 +1,199 @@
+.main-nav {
+    width: 100%;
+}
+
+.main-nav__wrapper {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 940px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+}
+
+.main-nav__list-item {
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid #000000;
+
+    @media (min-width: $desktop) {
+        border: none;
+    }
+}
+
+.main-nav__link {
+    display: block;
+    padding: 16px 0 14px;
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $pink;
+    }
+
+    &:focus {
+        color: $pink;
+    }
+
+    &:active {
+        color: #ffffff;
+        opacity: 0.3;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 14px 0;
+
+        font-family: $font-normal;
+        font-weight: 400;
+        text-transform: none;
+    }
+}
+
+.main-nav__link--active span {
+    @media (min-width: $desktop) {
+        padding-bottom: 5px;
+        border-bottom: 2px solid #ffffff;
+    }
+}
+
+.main-nav__link--active:hover span,
+.main-nav__link--active:focus span {
+    border-bottom: none;
+}
+
+.main-nav__menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    padding: 0 20px;
+
+    @media (min-width: $tablet) {
+        height: 109px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0;
+    }
+}
+
+.main-nav__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 23px;
+
+    &:focus svg {
+        fill: $pink;
+    }
+
+    &:active svg {
+        fill: #ffffff;
+        opacity: 0.3;
+    }
+}
+
+.main-nav__logo-icon--mobile {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}
+
+.main-nav__logo-icon--tablet {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+        margin-top: -14px;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.main-nav__logo-icon--desktop {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: block;
+        margin-top: -14px;
+    }
+}
+
+.main-nav__toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus svg {
+        fill: $pink;
+    }
+
+    &:active svg {
+        fill: #ffffff;
+        opacity: 0.3;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.main-nav__list {
+    @include list;
+    background-color: $navy;
+    border-top: 1px solid #000000;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 622px;
+
+        background-color: transparent;
+    }
+}
+
+.main-nav--nojs .main-nav__toggle,
+.main-nav--closed .main-nav__list,
+.main-nav__toggle-icon  {
+    display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+    display: block;
+}
+
+.main-nav--nojs .main-nav__list,
+.main-nav--closed .main-nav__list {
+    @media (min-width: $desktop) {
+        display: flex;
+    }
+}
+
+.main-nav--closed .main-nav__toggle-icon--burger,
+.main-nav--opened .main-nav__toggle-icon--cross {
+    display: block;
+    transition: display .2s ease;
+}
+
+.main-nav__toggle-icon--cross {
+    margin-top: 3px;
+    margin-right: -1px;
+}

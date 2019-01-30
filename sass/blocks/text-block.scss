@@ -1,0 +1,61 @@
+.text-block {
+    padding-top: 45px;
+    padding-bottom: 48px;
+
+    background-color: #ffffff;
+
+    @media (min-width: $tablet) {
+        padding-top: 91px;
+        padding-bottom: 77px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 93px;
+        padding-bottom: 88px;
+    }
+}
+
+.text-block--small-padding {
+    padding-top: 43px;
+    padding-bottom: 43px;
+
+    background-color: #ffffff;
+
+    @media (min-width: $tablet) {
+        padding-top: 65px;
+        padding-bottom: 67px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 60px;
+        padding-bottom: 63px;
+    }
+}
+
+.text-block--form {
+    // padding-bottom: 33px;
+    padding-bottom: 3px;
+
+    @media (min-width: $tablet) {
+        padding-bottom: 72px;
+    }
+}
+
+.text-block__text {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    text-align: center;
+    line-height: 30px;
+
+    @media (min-width: $tablet) {
+        width: 500px;
+
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 770px;
+    }
+}

@@ -1,0 +1,445 @@
+.form {
+    margin-bottom: 18px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 11px;
+    }
+}
+
+.form__form {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (min-width: $desktop) {
+        width: 940px;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}
+
+.form__fieldset-wrapper {
+    padding: 0 20px;
+    padding-bottom: 25px;
+    padding-top: 31px;
+
+    background-color: #ffffff;
+
+    @media (min-width: $desktop) {
+        width: 435px;
+        padding: 0;
+    }
+}
+
+.form__fieldset-wrapper--grey {
+    padding-top: 37px;
+    padding-bottom: 0;
+
+    background-color: $grey;
+
+    @media (min-width: $tablet) {
+        background-color: #ffffff;
+    }
+}
+
+.form__fieldset-wrapper--name {
+    padding-bottom: 42px;
+
+    @media (min-width: $tablet) {
+        order: 0;
+        padding-top: 0;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 14px;
+    }
+}
+
+.form__fieldset-wrapper--apps {
+    padding-top: 38px;
+    padding-bottom: 6px;
+
+    @media (min-width: $tablet) {
+        padding-top: 27px;
+        order: 1;
+        background-color: #ffffff;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 0;
+        width: auto;
+    }
+}
+
+.form__fieldset-wrapper--achievements {
+    @media (min-width: $tablet) {
+        order: 3;
+    }
+
+    @media (min-width: $desktop) {
+        width: 100%;
+    }
+}
+
+.form__fieldset-wrapper--contacts {
+    @media (min-width: $tablet) {
+        order: 2;
+        margin-top: 20px;
+        padding-bottom: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+
+.form__fieldset-wrapper--comment {
+    padding-top: 38px;
+    padding-bottom: 47px;
+
+    @media (min-width: $tablet) {
+        order: 4;
+        padding-top: 58px;
+        padding-bottom: 66px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 100%;
+        // padding-bottom: 64px;
+    }
+}
+
+.form__footer-wrapper {
+    margin: 0 20px;
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 620px;
+        margin: 0 auto;
+        order: 5;
+    }
+
+    @media (min-width: $desktop) {
+        width: 100%;
+    }
+}
+
+.form__fieldset {
+    // display: flex;
+    // flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    @media (min-width: $tablet) {
+        // flex-direction: row;
+        // flex-wrap: wrap;
+        width: 500px;
+        margin: 0 auto;
+        padding-left: 58px;
+        padding-right: 58px;
+
+        border: 2px solid $grey;
+        border-radius: 3px;
+    }
+
+    @media (min-width: $desktop) {
+        width: auto;
+    }
+}
+
+.form__fieldset--full-width {
+    @media (min-width: $tablet) {
+        width: auto;
+        padding-left: 0;
+        padding-right: 0;
+
+        border: none;
+    }
+}
+
+.form__fieldset--contacts {
+    @media (min-width: $desktop) {
+        width: 100%;
+    }
+}
+
+.form__fieldset--apps {
+    @media (min-width: $desktop) {
+        padding-right: 0;
+        padding-left: 65px;
+    }
+}
+
+.form__label {
+    display: inline-block;
+    width: auto;
+    margin-left: 22px;
+    margin-bottom: 5px;
+
+    color: $pink;
+    line-height: 30px;
+    text-transform: uppercase;
+    vertical-align: top;
+
+    @media (min-width: $tablet) {
+        height: 63px;
+        margin-left: 0;
+        margin-right: 19px;
+
+        line-height: 63px;
+    }
+}
+
+.form__label--contacts {
+    @media (min-width: $tablet) {
+        height: 50px;
+        margin-left: 20px;
+        line-height: 50px;
+    }
+}
+
+.form__input {
+    display: flex;
+    width: 100%;
+    height: 63px;
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    line-height: 63px;
+
+    border-width: 2px;
+    border-style: solid;
+    border-color: $grey-darker;
+    border-radius: 3px;
+    background-color: #ffffff;
+    vertical-align: middle;
+
+    outline: none;
+
+    @media (min-width: $tablet) {
+        width: auto;
+        margin-bottom: 52px;
+        flex-grow: 2;
+    }
+}
+
+.form__input--no-margin {
+    margin-bottom: 0;
+}
+
+.form__input:focus,
+.form__input:hover {
+    border-color: $navy;
+}
+
+.form__input:active {
+    border-color: $pink;
+}
+
+.form__input::placeholder {
+    font-family: $font-normal;
+    font-size: 18px;
+    line-height: 63px;
+    color: $navy;
+}
+
+.form__input--contacts {
+    @media (min-width: $tablet) {
+        order: -1;
+        margin-bottom: 0;
+        padding-right: 60px;
+        padding-left: 18px
+    }
+}
+
+
+.form__wrap {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 620px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    @media (min-width: $desktop) {
+        width: 435px;
+    }
+}
+
+.form__wrap--contacts {
+    @media (min-width: $tablet) {
+        position: relative;
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 13px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 375px;
+        margin: 0;
+    }
+}
+
+.form__wrap--contacts::before {
+    @media (min-width: $tablet) {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+
+        width: 60px;
+        height: 59px;
+
+        background-color: $grey-darker;
+        background-image: url("../../img/svg/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.form__wrap--contacts-mail::before {
+    background-image: url("../../img/svg/icon-mail.svg");
+}
+
+.form__legend {
+    margin-bottom: 39px;
+
+    color: $pink;
+    text-align: center;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet) {
+        padding: 0 24px;
+        margin-bottom: 25px;
+    }
+}
+
+.form__legend--apps {
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 44px;
+    }
+
+    @media (min-width: $desktop) {
+        white-space: nowrap;
+    }
+}
+
+.form__legend--achievements {
+    @media (min-width: $tablet) {
+        margin-bottom: 44px;
+    }
+}
+
+.form__legend--comment {
+    margin-bottom: 16px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 37px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 35px;
+    }
+}
+
+.form__legend--contacts {
+    display: none;
+    margin-bottom: 37px;
+
+    @media (min-width: $tablet) {
+        display: inline;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 34px;
+    }
+}
+
+.form__comment {
+    display: block;
+    width: 100%;
+    height: 201px;
+    padding: 14px 19px;
+
+    font-size: 18px;
+    line-height: 30px;
+    color: $navy;
+
+    border: 2px solid $grey;
+    box-sizing: border-box;
+    border-radius: 3px;
+    // overflow-y: scroll;
+    outline: none;
+
+    @media (min-width: $tablet) {
+        height: 193px;
+        margin-bottom: 52px;
+    }
+
+    @media (min-width: $desktop) {
+        height: 127px;
+        margin-bottom: 43px;
+    }
+}
+
+.form__comment:focus,
+.form__comment:hover {
+    border-color: $navy;
+}
+
+.form__comment:active {
+    border-color: $pink;
+}
+
+.form__comment::placeholder {
+    font-family: $font-normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $navy;
+    font-weight: 400px;
+}
+
+.form__submit-wrapper {
+    // padding: 0 20px;
+    @media (min-width: $tablet) {
+        width: 300px;
+    }
+}
+
+.form__submit-btn {
+    margin-bottom: 39px;
+}
+
+.form__tip {
+    margin: 0 auto;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form__tip sup {
+    color: $pink;
+    vertical-align: top;
+}
+
+.form__contacts-wrapper {
+    @media (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

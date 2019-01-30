@@ -1,0 +1,24 @@
+$font-bold: 'OpenSansBold', Arial, sans-serif;
+$font-light: 'OpenSansLight', Arial, sans-serif;
+$font-normal: 'OpenSans', Arial, sans-serif;
+$tablet: 660px;
+$desktop: 960px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+$mobile-tablet-only: 959px;
+$navy: #283645;
+$navy-opacity-03: rgba(40, 54, 69, 0.3);
+$navy-opacity-01: rgba(40, 54, 69, 0.1);
+$pink: #d22856;
+$pink_03: rgba(210, 40, 86, 0.3);
+$grey: #f2f2f2;
+$grey-darker: #e5e5e5;
+$white-opacity-03: rgba(255, 255, 255, 0.3);
+$green: #2aab6d;
+$green-hover: #1c9b5e;
+
+@mixin list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

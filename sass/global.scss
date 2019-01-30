@@ -1,0 +1,29 @@
+body {
+    width: auto;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $navy;
+
+    background-color: #ffffff;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+a {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: $navy;
+    text-decoration: none;
+}

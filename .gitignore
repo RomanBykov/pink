@@ -9,3 +9,6 @@ css/*.css
 node_modules/
 npm-debug.*
 Thumbs.db
+pink/
+.vscode/
+build/

@@ -1,0 +1,113 @@
+.advantages {
+    // padding: 0 20px;
+    padding-top: 48px;
+    background-color: $grey;
+
+    // outline: 1px solid red;
+    @media (min-width: $tablet) {
+
+        // padding: 0 130px;
+        padding-top: 27px;
+    }
+}
+
+.advantages__list {
+    @include list;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tablet) {
+        width: 310px;
+    }
+    @media (min-width: $desktop) {
+        width: auto;
+        // max-width: 880px;
+        // margin: 0 auto;
+        padding: 0 30px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.advantages__item {
+    flex-shrink: 0;
+    text-align: center;
+    margin-bottom: 31px;
+    @media (min-width: $tablet) {
+        text-align: left;
+        margin-bottom: 35px;
+    }
+    @media (min-width: $desktop) {
+        width: 240px;
+
+        text-align: center;
+    }
+}
+
+.advantages__header {
+    margin: 0;
+    margin-bottom: 12px;
+    @media (min-width: $desktop) {
+        margin-bottom: 23px;
+    }
+}
+
+.advantages__text {
+    margin: 0;
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+.advantages__wrapper {
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 620px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+        flex-direction: column-reverse;
+        width: 940px;
+    }
+}
+
+.advantages__images {
+    display: flex;
+    justify-content: center;
+
+    // outline: 1px solid red;
+    @media (min-width: $desktop) {
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+}
+
+.advantages__image-wrapper {
+    flex-shrink: 0;
+    height: 277px;
+    margin: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    @media (min-width: $tablet) {
+        position: relative;
+        z-index: 1;
+        height: 481px;
+        margin-top: -70px;
+    }
+    @media (min-width: $desktop) {
+        height: 302px;
+        margin-top: -118px;
+        margin-bottom: 56px;
+    }
+}
+
+.advantages__img--tablet {
+    display: none;
+    @media (min-width: $desktop) {
+        display: block;
+    }
+}

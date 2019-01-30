@@ -1,0 +1,132 @@
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 620px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+        width: 940px;
+    }
+}
+
+.social__logo {
+    margin-bottom: 33px;
+
+    outline: none;
+
+    @media (min-width: $tablet) {
+        width: 177px;
+        margin-top: -3px;
+        margin-bottom: 0;
+    }
+}
+
+.social__logo-svg--mobile {
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.social__logo-svg--desktop {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: block;
+    }
+}
+
+.social__logo svg {
+    fill: $navy;
+}
+
+.social__logo:hover svg,
+.social__logo:focus svg {
+    fill: $pink;
+}
+
+.social__logo:active svg {
+    fill: $navy;
+    opacity: 0.3;
+}
+
+.social__list {
+    @include list;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 177px;
+    margin-bottom: 37px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.social__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: $navy-opacity-03;
+    border-radius: 50%;
+
+    outline: none;
+}
+
+.social__link:hover,
+.social__link:focus {
+    border-color: $navy;
+}
+
+.social__link:active {
+    opacity: 0.3;
+}
+
+.social__developer {
+    display: flex;
+    align-items: center;
+
+    outline: none;
+
+    @media (min-width: $tablet) {
+        margin-top: 10px;
+        width: 177px;
+        justify-content: flex-end;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.social__developer-icon {
+    fill: $pink;
+    margin-left: 15px;
+
+    // @media (min-width: $desktop) {
+    //     margin-left: 25px;
+    // }
+}
+
+.social__developer:hover .social__developer-icon,
+.social__developer:focus .social__developer-icon {
+    fill: $navy;
+}
+
+.social__developer:active .social__developer-icon {
+    fill: $navy;
+    opacity: 0.3;
+}

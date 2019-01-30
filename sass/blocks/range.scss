@@ -1,0 +1,132 @@
+.range {
+    position: relative;
+    width: 240px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $tablet) {
+        height: 14px;
+        width: 202px;
+        margin-bottom: 59px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 288px;
+    }
+}
+
+.range::after {
+    @media (min-width: $tablet) {
+        content: "";
+
+        position: absolute;
+        bottom: -24px;
+        right: -18px;
+
+        width: 275px;
+        height: 1px;
+
+        background-color: #dddfe0;
+    }
+
+    @media (min-width: $desktop) {
+        right: -30px;
+        width: 410px;
+    }
+}
+
+.range:first-child {
+    @media (min-width: $tablet) {
+        margin-top: 21px;
+    }
+}
+
+.range:nth-child(2) {
+    @media (min-width: $tablet) {
+        margin-bottom: 56px;
+    }
+}
+
+.range:nth-child(3) {
+    @media (min-width: $tablet) {
+        margin-bottom: 23px;
+    }
+}
+
+.range__scale {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 240px;
+    height: 2px;
+
+    background-color: $navy;
+
+    transform: translate(-50%);
+
+    @media (min-width: $tablet) {
+        width: 202px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 288px;
+    }
+}
+
+.range__toggle {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    right: 35px;
+
+    width: 10px;
+    height: 10px;
+
+    border: 2px solid $pink;
+    border-radius: 50%;
+    background-color: $grey;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.range__toggle:hover,
+.range__toggle:focus,
+.range__toggle:active {
+    background-color: $pink;
+}
+
+.range__toggle--crop {
+    @media (min-width: $tablet) {
+        right: 42px;
+    }
+
+    @media (min-width: $desktop) {
+        right: 204px;
+    }
+}
+
+.range__toggle--fill {
+    @media (min-width: $tablet) {
+        right: 163px;
+    }
+
+    @media (min-width: $desktop) {
+        right: 28px;
+    }
+}
+
+.range__toggle--contrast {
+    @media (min-width: $tablet) {
+        right: 92px;
+    }
+
+    @media (min-width: $desktop) {
+        right: 115px;
+    }
+}

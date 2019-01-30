@@ -1,0 +1,118 @@
+.reviews {
+    padding-top: 42px;
+    padding-bottom: 110px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet) {
+        padding-top: 46px;
+        // padding-bottom: 105px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 186px;
+    }
+}
+
+.reviews__wrapper {
+    position: relative;
+
+    width: auto;
+    padding: 0 20px;
+    // outline: 1px solid blue;
+    @media (min-width: $tablet) {
+        width: 620px;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+        width: 940px;
+        padding: 0 10px;
+    }
+}
+
+.reviews__wrapper::before {
+    display: none;
+
+    @media (min-width: $desktop) {
+        content: "";
+        position: absolute;
+        top: -113px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: inline-block;
+        width: 79px;
+        height: 63px;
+
+        vertical-align: top;
+
+        background-image: url("../../img/svg/icon-quotes.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.reviews__review {
+    margin: 0 auto;
+    // padding: 0 20px;
+    // margin-bottom: 125px;
+
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+}
+
+.reviews__comment {
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    line-height: 30px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 35px;
+
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        max-width: 710px;
+    }
+}
+
+.reviews__author {
+    flex-shrink: 0;
+    display: inline-block;
+    margin-bottom: 13px;
+
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000000;
+    font-style: normal;
+    vertical-align: top;
+
+    @media (min-width: $tablet) {
+        font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 24px;
+    }
+}
+
+.reviews__author span {
+    font-family: $font-normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $navy;
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,116 @@
+.comment {
+    // height: 119px;
+    margin: 0;
+    padding: 18px 17px;
+    padding-bottom: 20px;
+
+    background-color: $grey;
+
+    // outline: 1px solid red;
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        height: 110px;
+        margin: 0;
+        padding: 24px 28px;
+        padding-bottom: 21px;
+        padding-right: 29px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 24px 28px;
+        padding-bottom: 21px;
+    }
+}
+
+.comment--best-photo {
+    margin: 0 20px;
+    height: unset;
+    @media (min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        height: unset;
+        max-width: 884px;
+
+        padding: 23px 28px;
+        padding-bottom: 15px;
+    }
+
+    @media (min-width: $desktop) {
+        height: unset;
+        margin: 0 auto;
+    }
+}
+
+.comment__author-wrapper--best-photo {
+    order: 0;
+}
+
+.comment__author {
+    font-family: $font-bold;
+    font-style: normal;
+}
+
+.comment__time {
+    font-family: $font-light;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.comment__text {
+    margin: 0;
+    margin-bottom: 9px;
+    // outline: 1px solid red;
+    overflow-y: scroll;
+
+    @media (min-width: $tablet) {
+        max-height: 50px;;
+        // margin-bottom: 8px;
+    }
+}
+
+.comment__text--best-photo {
+    @media (min-width: $tablet) {
+        order: 2;
+        width: 100%;
+    }
+}
+
+.comment__like-wrapper {
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $tablet) {
+        flex-direction: row-reverse;
+        margin-top: auto;
+    }
+}
+
+.comment__like-wrapper--best-photo {
+    @media (min-width: $tablet) {
+        order: 1;
+        margin-left: auto;
+    }
+}
+
+.comment__like-icon {
+    margin-right: 19px;
+
+    @media (min-width: $tablet) {
+        margin-right: 3px;
+        margin-left: 15px;
+    }
+}
+
+.comment__action-text {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $pink;
+
+    @media (min-width: $tablet) {
+        margin-right: auto;
+    }
+}

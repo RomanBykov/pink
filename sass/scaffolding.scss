@@ -1,0 +1,95 @@
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    z-index: -1;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 20px;
+}
+
+.none {
+    display: none;
+}
+
+.content {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @media (min-width: $desktop) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.tablet-inline {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: inline;
+    }
+}
+
+.tablet-only-inline {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: inline;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.desktop-only-inline {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: inline;
+    }
+}
+
+.desktop-inline {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: inline;
+    }
+}
+
+.desktop-none {
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}
+
+.tablet-except-inline {
+    display: inline;
+
+    @media (min-width: $tablet) {
+        display: none;
+    }
+
+    @media (min-width: $desktop) {
+        display: inline;
+    }
+}
+
+.tablet-none {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+}

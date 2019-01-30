@@ -1,0 +1,28 @@
+.prices {
+    padding-top: 68px;
+    padding-bottom: 101px;
+    background-color: $grey;
+
+    @media (min-width: $tablet) {
+        padding-top: 38px;
+        padding-bottom: 68px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 67px;
+        padding-bottom: 95px;
+    }
+}
+
+.prices__wrapper {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+
+    // overflow: hidden;
+
+    @media (min-width: $tablet) {
+        width: 100%;
+        overflow: visible;
+    }
+}

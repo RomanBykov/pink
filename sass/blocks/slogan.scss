@@ -1,0 +1,75 @@
+.slogan {
+    position: relative;
+
+    min-width: 280px;
+
+    padding-top: 42px;
+    padding-bottom: 36px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet) {
+        padding-top: 49px;
+        padding-bottom: 94px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 69px;
+        padding-bottom: 165px;
+    }
+}
+
+.slogan__text {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    font-family: $font-light;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    color: $navy;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        width: 620px;
+        margin-bottom: 2px;
+
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 920px;
+        margin-bottom: 3px;
+
+        font-size: 50px;
+        line-height: 58px;
+    }
+}
+
+.slogan__text--contacts {
+    margin-bottom: 35px;
+}
+
+.slogan--header {
+    margin-top: 55px;
+
+    background-color: transparent;
+
+    @media (min-width: $tablet) {
+        margin-top: 132px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 107px;
+    }
+}
+
+.slogan__text--white {
+    color: #ffffff;
+
+    @media (min-width: $tablet) {
+        font-size: 50px;
+        line-height: 59px;
+    }
+}

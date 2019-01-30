@@ -1,0 +1,31 @@
+.page-footer {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #ffffff;
+
+    // @media (min-width: $tablet) {
+    //     padding-top: 71px;
+    //     padding-bottom: 71px;
+    // }
+
+    @media (min-width: $desktop) {
+        padding-top: 103px;
+        padding-bottom: 71px;
+    }
+}
+
+.page-footer--index {
+    display: none;
+
+    @media (min-width: $tablet) {
+        display: block;
+    }
+}
+
+.page-footer--form {
+    @media (min-width: $desktop) {
+        padding-top: 24px;
+    }
+}

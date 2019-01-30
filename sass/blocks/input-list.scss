@@ -1,0 +1,135 @@
+.input-list {
+    @include list;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 19px;
+    }
+}
+
+.input-list--achievements {
+    // margin-bottom: 0px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 4px;
+    }
+
+    @media (min-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        height: 170px;
+        // display: grid;
+        // grid-template-columns: repeat(3, 260px);
+        // grid-column-gap: 54px;
+        // flex-wrap: wrap;
+        // justify-content: space-between;
+    }
+}
+
+.form__inputs-list--apps {
+    @media  (min-width: $desktop) {
+        margin-left: 9px;
+    }
+}
+
+.input-list__label {
+    position: relative;
+
+    display: inline-block;
+    margin-bottom: 43px;
+    padding-left: 69px;
+
+    font-size: 18px;
+    line-height: 39px;
+    vertical-align: middle;
+
+    cursor: pointer;
+
+    @media (min-width: $tablet) {
+        padding-left: 59px;
+    }
+}
+
+.input-list__label--radio {
+    margin-bottom: 36px;
+}
+
+.input-list__label::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $grey-darker;
+    border-radius: 3px;
+}
+
+.input-list__input:checked + .input-list__label::before {
+    background-image: url("../../img/svg/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    background-size: 65%;
+}
+
+.input-list__input {
+    position: absolute;
+    z-index: -1;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.input-list__input:focus + .input-list__label::before,
+.input-list__input:hover + .input-list__label::before {
+    border-color: $navy;
+}
+
+.input-list__input:active + .input-list__label::before {
+    border-color: $pink;
+}
+
+.input-list__label--radio::before {
+    border-radius: 50%;
+}
+
+.input-list__input:checked + .input-list__label--radio::before {
+    background-image: url("../../img/svg/dot.svg");
+    background-position: center;
+    background-size: 15px;
+}
+
+.input-list__item {
+    @media (min-width: $desktop) {
+        flex-shrink: 0;
+        width: 260px;
+    }
+}
+
+.input-list__item:nth-child(1) {
+    @media (min-width: $desktop) {
+        margin-right: 55px;
+    }
+}
+
+.input-list__item:nth-child(3) {
+    @media (min-width: $desktop) {
+        margin-right: 35px;
+    }
+}
