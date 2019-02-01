@@ -70,7 +70,7 @@ gulp.task("minify-html", function() {
 
 gulp.task("minify-js", function(cb) {
     pump([
-        gulp.src("build/js/*.js"),
+        gulp.src("build/js/script.js"),
         uglifyjs(),
         rename("script.min.js"),
         gulp.dest("build/js")
@@ -98,7 +98,7 @@ gulp.task("style", function() {
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([
-            autoprefixer()
+            autoprefixer({grid: true, browsers: ['last 2 versions', 'ie 6-8', 'Firefox > 20'] })
         ]))
         .pipe(gulp.dest("build/css"))
         .pipe(minify())

@@ -5,7 +5,7 @@
     "description": "Личный проект «Пинк» от HTML Academy",
     "devDependencies": {
         "@htmlacademy/editorconfig-cli": "1.x",
-        "autoprefixer": "^7.1.6",
+        "autoprefixer": "^9.4.7",
         "browser-sync": "2.18.x",
         "del": "^3.0.0",
         "gulp": "3.9.x",
@@ -13,7 +13,7 @@
         "gulp-htmlmin": "^5.0.1",
         "gulp-imagemin": "^5.0.3",
         "gulp-plumber": "1.1.x",
-        "gulp-postcss": "7.0.x",
+        "gulp-postcss": "^7.0.1",
         "gulp-posthtml": "^3.0.4",
         "gulp-rename": "^1.4.0",
         "gulp-sass": "3.1.x",
