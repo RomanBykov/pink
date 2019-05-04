@@ -4,17 +4,17 @@
     min-width: 280px;
 
     padding-top: 42px;
-    padding-bottom: 36px;
+    padding-bottom: 0;
     background-color: #ffffff;
 
     @media (min-width: $tablet) {
         padding-top: 49px;
-        padding-bottom: 94px;
+        padding-bottom: 46px;
     }
 
     @media (min-width: $desktop) {
         padding-top: 69px;
-        padding-bottom: 165px;
+        padding-bottom: 75px;
     }
 }
 

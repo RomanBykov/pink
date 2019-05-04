@@ -17,6 +17,10 @@
     @media (min-width: $tablet) {
         display: block;
     }
+
+    @media (min-width: $desktop) {
+        padding-top: 71px;
+    }
 }
 
 .page-footer--form {

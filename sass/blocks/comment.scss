@@ -28,7 +28,7 @@
     @media (min-width: $tablet) {
         display: flex;
         flex-direction: row;
-        align-items: baseline;
+        align-items: flex-start;
         flex-wrap: wrap;
         height: unset;
         max-width: 884px;
@@ -38,7 +38,7 @@
     }
 
     @media (min-width: $desktop) {
-        height: unset;
+        height: auto;
         margin: 0 auto;
     }
 }
@@ -64,7 +64,7 @@
     overflow-y: scroll;
 
     @media (min-width: $tablet) {
-        max-height: 50px;
+        max-height: 48px;
     }
 }
 
@@ -89,6 +89,10 @@
     @media (min-width: $tablet) {
         order: 1;
         margin-left: auto;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
     }
 }
 

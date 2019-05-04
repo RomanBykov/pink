@@ -1,9 +1,15 @@
 .advantages {
-    padding-top: 48px;
+    position: relative;
+
+    padding-top: 85px;
     background-color: $grey;
 
     @media (min-width: $tablet) {
-        padding-top: 27px;
+        padding-top: 5px;
+    }
+
+    @media (min-width: $desktop) {
+        padding: 0;
     }
 }
 
@@ -11,13 +17,17 @@
     @include list;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 
     @media (min-width: $tablet) {
         width: 310px;
+        margin-top: 70px;
+        margin-bottom: 0;
     }
 
     @media (min-width: $desktop) {
         width: auto;
+        margin: 0;
         padding: 0 30px;
         flex-direction: row;
         justify-content: space-between;
@@ -88,24 +98,21 @@
     flex-shrink: 0;
     height: 277px;
     margin: 0;
-    margin-top: 10px;
     overflow: hidden;
 
     @media (min-width: $tablet) {
         position: relative;
         z-index: 1;
         height: 481px;
-        margin-top: -70px;
     }
 
     @media (min-width: $desktop) {
         height: 302px;
-        margin-top: -118px;
         margin-bottom: 56px;
     }
 }
 
-.advantages__img--tablet {
+.advantages__img--desktop {
     display: none;
 
     @media (min-width: $desktop) {
