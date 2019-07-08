@@ -50,7 +50,7 @@ gulp.task("sprite", function() {
         inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/svg"));
+    .pipe(gulp.dest("img/svg"));
 });
 
 gulp.task("html", function() {
@@ -58,22 +58,22 @@ gulp.task("html", function() {
     .pipe(posthtml([
         include()
     ]))
-    .pipe(gulp.dest("build"))
+    .pipe(gulp.dest("."))
     .pipe(server.stream());
 });
 
 gulp.task("minify-html", function() {
-    return gulp.src("build/*.html")
+    return gulp.src("*.html")
         .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest("build"));
+        .pipe(gulp.dest("."));
 });
 
 gulp.task("minify-js", function(cb) {
     pump([
-        gulp.src("build/js/script.js"),
+        gulp.src("js/script.js"),
         uglifyjs(),
         rename("script.min.js"),
-        gulp.dest("build/js")
+        gulp.dest("js")
     ]),
     cb
 });
@@ -86,7 +86,7 @@ gulp.task("copy", function() {
     ], {
         base: "."
     })
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("."));
 });
 
 gulp.task("clean", function() {
@@ -100,16 +100,16 @@ gulp.task("style", function() {
         .pipe(postcss([
             autoprefixer({grid: true, browsers: ['last 2 versions', 'ie 6-8', 'Firefox > 20'] })
         ]))
-        .pipe(gulp.dest("build/css"))
+        .pipe(gulp.dest("css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"))
+        .pipe(gulp.dest("css"))
         .pipe(server.stream());
 });
 
 gulp.task("build", function (done) {
     run(
-        "clean",
+        // "clean",
         "copy",
         "style",
         "sprite",
@@ -122,7 +122,7 @@ gulp.task("build", function (done) {
 
 gulp.task("serve", function () {
     server.init({
-        server: "build/",
+        server: ".",
         notify: false,
         open: true,
         cors: true,
