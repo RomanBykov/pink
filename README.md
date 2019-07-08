@@ -1,3 +1,5 @@
+See it on [github pages](https://romanbykov.github.io/pink_v2/)
+
 # pink_v2
 
 ## Build Setup:
