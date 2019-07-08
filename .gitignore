@@ -11,4 +11,4 @@ npm-debug.*
 Thumbs.db
 pink/
 .vscode/
-build/
+# build/
