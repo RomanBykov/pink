@@ -12,7 +12,7 @@ cd pink_v2
 # Install dependencies:
 npm install
 
-# Server with hot reload at http://localhost:8080/
+# Server with hot reload at http://localhost:3000/
 npm start
 
 # Output will be at build
