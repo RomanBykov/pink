@@ -13,7 +13,7 @@
     width: 74px;
     height: 73px;
 
-    background-image: url("../../img/svg/bg-hit.svg");
+    background-image: url("../img/svg/bg-hit.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -23,14 +23,14 @@
         width: 61px;
         height: 61px;
 
-        background-image: url("../../img/svg/bg-hit-tablet.svg");
+        background-image: url("../img/svg/bg-hit-tablet.svg");
     }
 
     @media (min-width: $desktop) {
         width: 74px;
         height: 73px;
 
-        background-image: url("../../img/svg/bg-hit.svg");
+        background-image: url("../img/svg/bg-hit.svg");
     }
 }
 
