@@ -1,15 +1,15 @@
-See it on [github pages](https://romanbykov.github.io/pink_v2/)
+See it on [github pages](https://romanbykov.github.io/pink/)
 
-# pink_v2
+# pink
 
 ## Build Setup:
 
 ``` bash
 # Download repository:
-git clone https://github.com/RomanBykov/pink_v2
+git clone https://github.com/RomanBykov/pink
 
 # Go to the app:
-cd pink_v2
+cd pink
 
 # Install dependencies:
 npm install
